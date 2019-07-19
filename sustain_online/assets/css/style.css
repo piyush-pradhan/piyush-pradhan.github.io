@@ -629,7 +629,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .dropdown-menu.extended li a:hover {
     /* background-color: #F7F8F9 !important; */
-    color: #09b47d;
+    color: #000;
 }
 
 .dropdown-menu.tasks-bar .task-info .desc {
@@ -651,12 +651,13 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     height: 10px;
 }
 
-.dropdown-menu.notification li a .photo img {
+.dropdown-menu.notification li a .photo i {
     border-radius: 2px 2px 2px 2px;
     float: left;
-    height: 40px;
     margin-right: 4px;
-    width: 40px;
+    font-size:20px;
+    padding-right:5%;
+    margin-top:0.2em;
 }
 
 .dropdown-menu.notification li a .subject {
@@ -669,11 +670,12 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .dropdown-menu.notification li a .subject .time {
-    font-size: 11px;
+    font-size: 17px;
     font-style: italic;
     font-weight: bold;
     position: absolute;
-    right: 5px;
+    right: 2em;
+    color:#555;
 }
 
 .dropdown-menu.notification li a .message {
@@ -1336,6 +1338,11 @@ PANELS CONFIGURATIONS
 	position: absolute;
     top: -3px;
     left: 11.6em;
+}
+.product-panel-3 .badge {
+    position: absolute;
+    top: -3px;
+    left: 22.6em;
 }
 .product-panel-2 .badge-2 {
     position: absolute;
@@ -2320,4 +2327,20 @@ label {
 .carousel-caption > h4
 {
     font-weight:normal;
+}
+.copyright
+{
+    height: 11px;
+    float: left;
+    padding: 0 3px 0 0;
+}
+.dropdown-menu.extended li a:hover .photo>i {
+    color: #f0ad4e;
+}
+.fa.fa-info-circle
+{
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+    padding:5px;
 }
