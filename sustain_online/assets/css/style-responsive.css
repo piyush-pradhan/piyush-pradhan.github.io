@@ -376,13 +376,13 @@
     left: 3.5vw;
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    padding: 5% 15%;
-    height: 200px;
+    padding: 0% 15%;
+    height: 250px;
 }
 .banner_img img {
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    height: 200px;
+    height: 250px;
 }
 
 }
@@ -525,13 +525,13 @@
     left: 4.2vw;
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    padding: 5% 15%;
-    height: 200px;
+    padding: 0% 15%;
+    height: 250px;
 }
 .banner_img img {
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    height: 200px;
+    height: 250px;
 }
 }
 
