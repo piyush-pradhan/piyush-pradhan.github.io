@@ -623,7 +623,7 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 .header {
-    position: absolute;
+    position: fixed;
 }
 a.logo {
   font-size: 16px;
