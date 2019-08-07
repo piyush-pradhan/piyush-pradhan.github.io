@@ -444,7 +444,7 @@ a[data-toggle="collapse"] {
     left: 3.5vw;
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    padding: 0% 15%;
+    padding: 0% 0%;
     height: 250px;
 }
 .banner_img img {
@@ -773,7 +773,7 @@ a.logo {
     left: 4.2vw;
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    padding: 0% 15%;
+    padding: 0% 0%;
     height: 250px;
 }
 .banner_img img {
