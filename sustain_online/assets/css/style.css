@@ -847,7 +847,7 @@ ul.sidebar-menu li {
   margin-bottom: 5px;
   /* margin-left:10px;
     margin-right:10px; */
-  ;
+
 }
 
 ul.sidebar-menu li.sub-menu {
@@ -1058,7 +1058,7 @@ ul.top-menu>li>a:focus {
 .notify-area>a {
   border-top: 1px solid #ccc;
   /* border-bottom:1px solid #ccc; */
-  ;
+
 }
 
 .dropdown-menu.extended {
@@ -1092,7 +1092,7 @@ ul.top-menu>li>a:focus {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important;
   }
-  ;
+
 }
 
 .dropdown-menu.extended li p {
@@ -1338,17 +1338,17 @@ ul.top-menu>li>a:focus {
 }
 
 .sidebar-closed>#sidebar>ul {
-  display: none;
+  display: block;
+  width:45px;
 }
 
 .sidebar-closed #main-content {
-  margin-left: 0px;
+  margin-left: 50px;
 }
 
 .sidebar-closed #sidebar {
   margin-left: -180px;
 }
-
 
 /* Dash Side */
 
@@ -1503,7 +1503,6 @@ label:after {
   padding: 0 0 0px;
   position: absolute;
   /* pointer-events:  */
-  none;
   /*added later */
   display: none;
 }
@@ -1761,9 +1760,9 @@ PANELS CONFIGURATIONS
 }
 
 .product-panel-3 .badge {
-  position: absolute;
-  top: -3px;
-  left: 22.6em;
+  position: relative;
+  top: 3.5em;
+  left: calc(100% - 53px);
 }
 
 .product-panel-2 .badge-2 {
@@ -1783,8 +1782,6 @@ PANELS CONFIGURATIONS
   border-radius: 100%;
 }
 
-
-}
 
 /* BLOG PANEL */
 #blog-bg {
@@ -2813,6 +2810,7 @@ legend.so-border {
   font-size: 1em;
   padding: 2%;
   outline: none;
+  height: 40px;
 }
 
 /* The radio */

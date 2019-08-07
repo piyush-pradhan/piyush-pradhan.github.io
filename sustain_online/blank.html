@@ -38,7 +38,8 @@
       <!--header start-->
       <header class="header black-bg">
         <div class="sidebar-toggle-box">
-          <div class="fa fa-bars"></div>
+          <div class="fa fa-bars hidden-xs hidden-sm"></div>
+          <i class="fa fa-bars hidden-md hidden-lg" id="resp-sidebarCollapse"></i>
         </div>
         <!--logo start-->
         <a href="index.html" class="logo">SustainOnline</a>
@@ -209,7 +210,7 @@
         *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
       <aside>
-        <div id="sidebar" class="nav-collapse ">
+        <div id="sidebar" class="nav-collapse half-nav hidden-xs hidden-sm">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <li class="mt">
@@ -291,6 +292,26 @@
           <!-- sidebar menu end-->
         </div>
       </aside>
+      <nav id="resp-sidebar" class="hidden-md hidden-lg">
+                        <ul class="xs-sm-nav-1 mt-90 pad-zero" >
+              <li><a href="" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
+              <li><a href=""><i class="fa fa-wrench"></i><span>Tools</span></a></li>
+            </ul>
+
+            <ul class="xs-sm-nav-2 pad-zero">
+              <li><a href=""><i class="fa fa-tasks"></i><span>My Progress</span></a></li>
+              <li><a href=""><i class="fa fa-heart"></i><span>My Favorites</span></a></li>
+              <li><a href=""><i class="fa fa-history"></i><span>My Activity</span></a></li>
+            </ul>
+
+            <!-- <ul class="xs-sm-nav-3 pad-zero">
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+            </ul> -->
+      </nav>
+      <div class="overlay"></div>
       <!--sidebar end-->
       <!-- **********************************************************************************************************************************************************
         MAIN CONTENT
