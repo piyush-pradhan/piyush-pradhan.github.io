@@ -160,7 +160,7 @@ $(document).ready(function() {
                 'padding': '6px 0px'
             });
             $('#sidebar > ul > li').css({
-                'padding': '0 8px'
+                'padding': '0 6px'
             });
             $('a.active').css({
                 'border-radius': '50%'
