@@ -817,10 +817,10 @@ p.separator:before {
     margin: 0 auto;
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 31%;
     right: 0;
     bottom: 0;
-    width: 55%;
+    width: 68%;
     z-index: -1;
 }
 .tab-content {
