@@ -162,6 +162,11 @@ h6 {
   margin: 3rem !important;
 }
 
+.mt-0
+{
+  margin-top:0px;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -722,6 +727,7 @@ ul.top-menu>li>.logout {
   height: 100%;
   position: fixed;
   background: #fff;
+  box-shadow: 0 9px 18px 0 #0000002e;
 }
 
 .sidebar-icon {
@@ -929,7 +935,7 @@ ul.sidebar-menu li a.active i {
 
 .black-bg {
   background: #fff;
-  border-bottom: 1px solid #ccc;
+  box-shadow: 0 3px 6px 0 #00000029;
 }
 
 .wrapper {
@@ -1756,7 +1762,7 @@ PANELS CONFIGURATIONS
 .product-panel-2 .badge {
   position: absolute;
   top: -3px;
-  left: 11.6em;
+  left: calc(100% - 53px);
 }
 
 .product-panel-3 .badge {
@@ -1768,7 +1774,7 @@ PANELS CONFIGURATIONS
 .product-panel-2 .badge-2 {
   position: absolute;
   top: -3px;
-  left: 83.5%;
+  left:calc(100% - 65px);
 }
 
 .badge-hot {
@@ -3090,6 +3096,8 @@ p.background span {
   font-weight: bold;
 }
 
+
+
 .btn-so-filled:hover, .btn-so-filled:focus, .btn-so-filled:active {
     color: #0ab47d;
     text-decoration: none;
@@ -3098,6 +3106,30 @@ p.background span {
     outline:none;
 }
 
+
+.btn-so-filled-rounded
+{
+  border-radius: 20px;
+    border: solid 1px #0ab47d;
+    background: #0ab47d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.8em 3em;
+
+}
+
+.btn-so-filled-rounded:hover, .btn-so-filled-rounded:focus,.btn-so-filled-rounded:active
+{
+  border-radius: 20px;
+    border: solid 1px #0ab47d;
+    background: #f7f7f7;
+    color: #0ab47d;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.8em 3em;
+
+}
 /*--- Profile Picture CSS ---*/
 .profile-pic
 {
@@ -3210,4 +3242,52 @@ p.separator span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
   background: #f4f4f4 ;
   padding: 0 15px;
+}
+
+
+/*============ My Projects Page CSS ============*/
+.dot-drop-btn
+{
+    font-size: 18px;
+    color: #000;
+    cursor:pointer;
+    display:block;
+}
+
+.dot-drop-btn:hover
+{
+  color:#0ab47d;
+}
+.myproject-drop-down
+{
+    position: absolute;
+    top: 0%;
+    left: -185px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 3px;
+    /* -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175); */
+     box-shadow: none;
+}
+.myproject-border
+{
+  border-right:1px solid #e6e4e5;
+  height:3.5em;
+}
+
+.myproject-progress-bar
+{
+  height:5px;
 }

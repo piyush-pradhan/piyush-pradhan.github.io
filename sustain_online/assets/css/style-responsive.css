@@ -333,6 +333,10 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
+.myproject-drop-down {
+    left: -7em;
+}
+
 }
 
 
@@ -379,13 +383,13 @@ a[data-toggle="collapse"] {
   .product-panel-2 .badge {
     position: absolute;
     top: -3px;
-    left: 86%;
+    left: calc(100% - 53px);
   }
 
   .product-panel-3 .badge {
     position: absolute;
     top: -3px;
-    left: 19.8em;
+    left: calc(100% - 68px);
   }
 
   .carousel-caption h2 {
@@ -623,7 +627,7 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 .header {
-    position: absolute;
+    position: fixed;
 }
 a.logo {
   font-size: 16px;
@@ -632,6 +636,15 @@ a.logo {
   margin-top: 15px;
   text-transform: normal;
   font-weight: 700;
+}
+.myproject-drop-down {
+    left: -6em;
+}
+.dot-drop-btn {
+    font-size: 17px;
+    color: #000;
+    cursor: pointer;
+    display: block;
 }
 }
 
@@ -962,6 +975,15 @@ a.logo {
   margin-top: 15px;
   text-transform: normal;
   font-weight: 700;
+}
+.myproject-drop-down {
+    left: -7em;
+}
+.dot-drop-btn {
+    font-size: 17px;
+    color: #000;
+    cursor: pointer;
+    display: block;
 }
 }
 
