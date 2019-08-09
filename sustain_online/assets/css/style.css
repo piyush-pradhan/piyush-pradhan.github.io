@@ -117,7 +117,10 @@ h6 {
 .fz-18 {
   font-size: 18px;
 }
-
+.fz-20
+{
+  font-size: 20px;
+}
 .fz-30 {
   font-size: 30px;
 }
@@ -488,6 +491,14 @@ h6 {
   padding-right: 5px;
 }
 
+.pr-10
+{
+  padding-right: 10px;
+}
+.pr-15
+{
+  padding-right: 15px;
+}
 .pr-20 {
   padding-right: 20px;
 }
@@ -517,6 +528,34 @@ h6 {
   padding-left: 90px;
 }
 
+.p-5
+{
+  padding: 5px;
+}
+.p-10
+{
+  padding: 10px;
+}
+.p-15
+{
+  padding: 15px;
+}
+.p-20
+{
+  padding: 20px;
+}
+.p-25
+{
+  padding: 25px;
+}
+.p-30
+{
+  padding: 30px;
+}
+.p-35
+{
+  padding: 35px;
+}
 .p-40 {
   padding: 40px;
 }
@@ -2521,7 +2560,7 @@ label {
   width: 100%;
   padding: 14px 15px;
   text-align: center;
-  border-right: 1px solid #d5d8df;
+  border-right: 1px solid #d5d8df;`
   color: #797979;
 }
 .panel-footer.revenue-foot ul li a:hover,
@@ -2645,6 +2684,11 @@ label {
 }
 .col-fff {
   color: #fff;
+}
+
+.col-light
+{
+  color:#4f5352;
 }
 .bg-fff
 {
@@ -3290,4 +3334,134 @@ p.separator span {
 .myproject-progress-bar
 {
   height:5px;
+}
+
+/*============ Notification Setting CSS ============*/
+
+.notify-panel-pad
+{
+  padding: 20px 30px;
+}
+
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle:before {
+  content: 'Off';
+  left: -4rem;
+}
+.btn-toggle:after {
+  content: 'On';
+  left: -4rem;
+  opacity: 0.5;
+}
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+}
+.btn-toggle.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+}
+
+.btn-toggle:before,
+.btn-toggle:after {
+  color: #6b7381;
+}
+.btn-toggle.active {
+  background-color: rgba(10,180,125,0.5);
+}
+.btn-toggle.btn-lg {
+  margin: 0 5rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 14px;
+    width: 34px;
+    border-radius: 2.5rem;
+}
+.btn-toggle.btn-lg:focus,
+.btn-toggle.btn-lg.focus,
+.btn-toggle.btn-lg:focus.active,
+.btn-toggle.btn-lg.focus.active {
+  outline: none;
+}
+.btn-toggle.btn-lg:before,
+.btn-toggle.btn-lg:after {
+  line-height: 1;
+  width: 5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle.btn-lg:before {
+  content: 'Off';
+  left: -5rem;
+  font-size:12px;
+}
+.btn-toggle.btn-lg:after {
+  content: 'On';
+  left: -5rem;
+  opacity: 0;
+  font-size: 12px;
+}
+.btn-toggle.btn-lg > .handle {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 1.875rem;
+    background: #f1f1f1;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-lg.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.btn-lg.active > .handle {
+  left: 21px;
+  transition: left 0.25s;
+  background: #0ab47d;
+}
+.btn-toggle.btn-lg.active:before {
+  opacity: 0;
+}
+.btn-toggle.btn-lg.active:after {
+  opacity: 1;
 }

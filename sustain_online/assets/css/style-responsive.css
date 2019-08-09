@@ -2,13 +2,13 @@
   .product-panel-2 .badge {
     position: absolute;
     top: -3px;
-    left: 12.9em;
+    left: calc(100% - 53px);
   }
 
   .product-panel-3 .badge {
     position: absolute;
     top: -3px;
-    left: 24.6em;
+    left: calc(100% - 68px);
   }
 }
 
@@ -646,6 +646,14 @@ a.logo {
     cursor: pointer;
     display: block;
 }
+/*============ Notification Settings CSS ===========*/
+.notify-panel-pad
+{
+  padding: 20px 30px;
+}
+.btn-toggle.btn-lg {
+    margin: 0 2em;
+}
 }
 
 @media (max-width: 379px) {
@@ -984,6 +992,14 @@ a.logo {
     color: #000;
     cursor: pointer;
     display: block;
+}
+/*============ Notification Settings CSS ===========*/
+.notify-panel-pad
+{
+  padding: 20px 30px;
+}
+.btn-toggle.btn-lg {
+    margin: 0 2em;
 }
 }
 
