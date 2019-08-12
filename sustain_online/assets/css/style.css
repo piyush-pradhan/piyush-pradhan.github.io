@@ -14,6 +14,16 @@ body {
   overflow-x: hidden;
 }
 
+*
+{
+box-sizing : border-box;
+}
+
+a:hover, a:focus {
+    color: #09b47d;
+    text-decoration: underline;
+}
+
 ul li {
   list-style: none;
 }
@@ -153,6 +163,10 @@ h6 {
   font-style: italic;
 }
 
+.m-0
+{
+  margin:0 !important;
+}
 .m-1 {
   margin: 1rem !important;
 }
@@ -295,7 +309,7 @@ h6 {
 }
 
 .mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 .mb-0-i {
@@ -1805,9 +1819,9 @@ PANELS CONFIGURATIONS
 }
 
 .product-panel-3 .badge {
-  position: relative;
-  top: 3.5em;
-  left: calc(100% - 53px);
+    position: absolute;
+    top: -3px;
+    left: calc(100% - 68px);
 }
 
 .product-panel-2 .badge-2 {
@@ -2690,6 +2704,11 @@ label {
 {
   color:#4f5352;
 }
+
+.col-so
+{
+  color: #0ab47d;
+}
 .bg-fff
 {
   background-color:#fff;
@@ -2862,7 +2881,16 @@ legend.so-border {
   outline: none;
   height: 40px;
 }
-
+.so_textarea
+{
+  width: 100%;
+  border: none;
+  background: #fff;
+  font-size: 1em;
+  padding: 2%;
+  outline: none;
+  height: 35px;
+}
 /* The radio */
 .radio {
   display: block;
@@ -3010,7 +3038,7 @@ legend.so-border {
 .drop {
   width: 400px;
   height: 100%;
-  border: 3px dashed #DADFE3;
+  border: 2px dashed #DADFE3;
   border-radius: 0px;
   overflow: hidden;
   text-align: center;
@@ -3018,7 +3046,7 @@ legend.so-border {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  margin: auto;
+  margin: 0;
   padding: 7% 0 2% 0;
   /* position: absolute;
   top: 0;
@@ -3165,7 +3193,7 @@ p.background span {
 
 .btn-so-filled-rounded:hover, .btn-so-filled-rounded:focus,.btn-so-filled-rounded:active
 {
-  border-radius: 20px;
+    border-radius: 20px;
     border: solid 1px #0ab47d;
     background: #f7f7f7;
     color: #0ab47d;
@@ -3173,6 +3201,28 @@ p.background span {
     font-size: 12px;
     padding: 0.8em 3em;
 
+}
+
+.btn-so-hollow-rounded
+{
+    border-radius: 20px;
+    border: solid 1px #0ab47d;
+    background: #fff;
+    color: #0ab47d;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.8em 3em;
+}
+
+.btn-so-hollow-rounded:hover, .btn-so-hollow-rounded:focus,.btn-so-hollow-rounded:active
+{
+    border-radius: 20px;
+    border: solid 1px #0ab47d;
+    background: #0ab47d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.8em 3em;
 }
 /*--- Profile Picture CSS ---*/
 .profile-pic
@@ -3464,4 +3514,47 @@ p.separator span {
 }
 .btn-toggle.btn-lg.active:after {
   opacity: 1;
+}
+
+/*============ My Branding CSS ============*/
+
+p.brand-separator {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  color: #9D9D9D;
+}
+p.brand-separator:before {
+    border-top: 1px solid #9D9D9D;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 0;
+    bottom: 0;
+    width: 85%;
+    z-index: -1;
+}
+/*============ Notifications Page CSS ============*/
+.notification-panel-pad
+{
+  padding: 0px 30px;
+}
+.notification-panel-pad:hover
+{
+  background-color:#f4e0cb;
+}
+.notification-panel-pad .dot-drop-btn {
+    font-size: 21px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    margin: 15% 0;
+}
+
+.notification-panel-pad .myproject-drop-down {
+
+    left: -69px;
+
 }

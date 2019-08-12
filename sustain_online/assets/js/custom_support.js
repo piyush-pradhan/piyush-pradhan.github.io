@@ -143,7 +143,7 @@ $(document).ready(function() {
                 'border-radius': '0%'
             });
             $('ul.sidebar-menu > li > a.active').css({
-                'padding': '3px 0 3px 7px',
+                'padding': '3px 11px',
                 'border-radius': '50%'
             });
             $('ul.sidebar-menu > li > a:hover').css({
