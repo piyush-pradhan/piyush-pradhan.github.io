@@ -160,7 +160,7 @@ $(document).ready(function() {
             $('ul.sidebar-menu > li > a > i').css({
                 'font-size': '20px',
                 'transition': 'all 0.9s ease',
-                'padding': '6px 0px'
+                'padding': '6px 5px 6px 0px'
             });
             $('#sidebar > ul > li').css({
                 'padding': '0 6px'
