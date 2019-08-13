@@ -17,7 +17,9 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css" integrity="sha256-AaQqnjfGDRZd/lUp0Dvy7URGOyRsh8g9JdWUkyYxNfI=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
     <!-- Custom styles  -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -210,7 +212,7 @@
         *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
       <aside>
-        <div id="sidebar" class="nav-collapse half-nav hidden-xs hidden-sm">
+        <div id="sidebar" class="half-nav hidden-sm hidden-xs">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <li class="mt">
@@ -231,6 +233,49 @@
               <span>Tools</span>
               </a>
             </li>
+            <li class="">
+              <a class="" href="tools.html">
+              <i class="fa fa-leaf"></i>
+              <span>Reporting</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar-menu second" id="nav-accordion">
+            <hr/>
+            <li>
+              <p>Management</p>
+            </li>
+            <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#um_list">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-users"></i>
+              <span>User Management</span>
+              </a>
+              <div id="um_list" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="invite_user.html" class="pad-zero">Invite Users</a></li>
+                    <li class="mt-15"><a href="profile.html" class="pad-zero">Edit Users</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
+            <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#analytics">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-chart-pie"></i>
+              <span>Analytics</span>
+              </a>
+              <div id="analytics" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="" class="pad-zero">Invitations</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Course Completion</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Project Creation</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
           </ul>
           <ul class="sidebar-menu second" id="nav-accordion">
             <hr/>
@@ -238,12 +283,23 @@
               <p>My List</p>
             </li>
             <li class="">
-              <a class="" href="index.html">
+              <a class="accordion-toggle" data-toggle="collapse" href="#myprogress">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
               <i class="fa fa-tasks"></i>
               <span>My Progress</span>
               </a>
+              <div id="myprogress" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="" class="pad-zero">Finished Courses</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Courses in Progress</a></li>
+                    <li class="mt-15"><a href="my_projects.html" class="pad-zero">My Projects</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">My Insights</a></li>
+                  </ul>
+              </div>
+            </div>
             </li>
-            <li class="">
+            <!-- <li class="">
               <a class="" href="index.html">
               <i class="fa fa-heart"></i>
               <span>My Favorites</span>
@@ -254,7 +310,7 @@
               <i class="fa fa-history"></i>
               <span>My Activity</span>
               </a>
-            </li>
+            </li> -->
             <li class="hidden-lg hidden-md hidden-sm">
               <a class="" data-toggle="modal" href="#notification-box">
               <i class="fa fa-bell"></i>
@@ -293,21 +349,23 @@
         </div>
       </aside>
       <nav id="resp-sidebar" class="hidden-md hidden-lg">
-        <ul class="xs-sm-nav-1 mt-90 pad-zero" >
-          <li><a href="" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
-          <li><a href=""><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
-          <li><a href=""><i class="fa fa-wrench"></i><span>Tools</span></a></li>
-        </ul>
-        <ul class="xs-sm-nav-2 pad-zero">
-          <li><a href=""><i class="fa fa-tasks"></i><span>My Progress</span></a></li>
-          <li><a href=""><i class="fa fa-heart"></i><span>My Favorites</span></a></li>
-          <li><a href=""><i class="fa fa-history"></i><span>My Activity</span></a></li>
-        </ul>
-        <!-- <ul class="xs-sm-nav-3 pad-zero">
-          <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-          <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-          <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-          </ul> -->
+                        <ul class="xs-sm-nav-1 mt-90 pad-zero" >
+              <li><a href="" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
+              <li><a href=""><i class="fa fa-wrench"></i><span>Tools</span></a></li>
+            </ul>
+
+            <ul class="xs-sm-nav-2 pad-zero">
+              <li><a href=""><i class="fa fa-tasks"></i><span>My Progress</span></a></li>
+              <li><a href=""><i class="fa fa-heart"></i><span>My Favorites</span></a></li>
+              <li><a href=""><i class="fa fa-history"></i><span>My Activity</span></a></li>
+            </ul>
+
+            <!-- <ul class="xs-sm-nav-3 pad-zero">
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
+            </ul> -->
       </nav>
       <div class="overlay"></div>
       <!--sidebar end-->

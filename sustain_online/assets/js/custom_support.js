@@ -80,11 +80,13 @@ $(document).ready(function() {
             });
             $('#sidebar').css({
                 'width': '210px',
-                'transition': 'all 0.9s ease'
+                'transition': 'all 0.9s ease',
+                'overflow-x' : 'hidden'
             });
             $('#sidebar > ul').css({
                 'width': '210px',
                 'transition': 'all 0.9s ease'
+
             });
             $("#sidebar").removeClass("half-nav");
             $('ul.sidebar-menu > li > a:hover').css({
@@ -126,7 +128,8 @@ $(document).ready(function() {
             });
             $('#sidebar').css({
                 'margin-left': '0px',
-                'transition': 'all 0.9s ease'
+                'transition': 'all 0.9s ease',
+                'overflow' : 'hidden'
             });
             $('#sidebar > ul').show();
             $('#sidebar > ul').css({

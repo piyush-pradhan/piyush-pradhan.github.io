@@ -523,7 +523,7 @@ h6 {
 
 .pl-0
 {
-  padding-right:0;
+  padding-left:0;
 }
 
 .pl-5 {
@@ -727,15 +727,22 @@ hr {
 }
 
 .pad-zero {
-  padding: 0;
+  padding: 0 !important;
 }
 
+.pt-zero
+{
+  padding-top: 0 !important;
+}
 .pr-zero {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
-
+.pb-zero
+{
+  padding-bottom: 0 !important;
+}
 .pl-zero {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 
@@ -781,6 +788,30 @@ ul.top-menu>li>.logout {
   position: fixed;
   background: #fff;
   box-shadow: 0 9px 18px 0 #0000002e;
+  overflow-y:scroll;
+}
+#sidebar::-webkit-scrollbar
+{
+  opacity:0;
+  width:1px;
+}
+
+@-moz-document url-prefix() {
+  #sidebar
+  {
+    width: 210px;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 9px 18px 0 #0000002e;
+    overflow-y:scroll;
+  }
+
+  #sidebar::-webkit-scrollbar
+  {
+    opacity:0;
+    width:1px;
+  }
 }
 
 .sidebar-icon {
@@ -803,6 +834,8 @@ ul.top-menu>li>.logout {
 #sidebar .sub-menu>.sub li:last-child {
   padding-bottom: 10px;
 }
+
+
 
 
 /*LEFT NAVIGATION ICON*/
