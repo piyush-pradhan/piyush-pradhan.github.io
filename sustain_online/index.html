@@ -43,19 +43,41 @@
         *********************************************************************************************************************************************************** -->
       <!--header start-->
       <header class="header black-bg">
-        <div class="sidebar-toggle-box">
+        <div class="sidebar-toggle-box col-xs-1 pl-0">
           <div class="fa fa-bars hidden-xs hidden-sm"></div>
           <i class="fa fa-bars hidden-md hidden-lg" id="resp-sidebarCollapse"></i>
         </div>
         <!--logo start-->
-        <a href="index.html" class="logo">SustainOnline</a>
+        <div class="hidden-xs">
+          <a href="index.html" class="logo">SustainOnline</a>
+        </div>
+        <div class="col-xs-9 hidden-sm hidden-md hidden-lg">
+          <h1 class="col-light text-center fw900 fz-40 mb-0 mt-5 ml-25">SO</h1>
+        </div>
         <!--logo end-->
         <!--search bar-->
-        <div class="form-group search-bar has-feedback has-search">
+        <div class="form-group search-bar has-feedback has-search hidden-xs">
           <span class="fa fa-search form-control-feedback"></span>
           <input type="text" class="form-control" placeholder="Search courses, Tools and more...">
         </div>
+        <div class="col-xs-1 hidden-sm hidden-md hidden-lg pl-0 pr-0">
+          <a href="#search_field" data-toggle="collapse"><i class="fa fa-search col-light fz-20 mt-15"></i></a>
+        </div>
+        <!--Profile Icon -->
+          <div class="col-xs-1 hidden-sm hidden-md hidden-lg pr-0">
+            <a href="profile.html" class="float-right">
+            <img src="assets/img/ui-zac.jpg" alt="My Account" class="img-circle mt-10" width="30">
+            </a>
+          </div>
+        <!-- Profile Icon -->
+        <div id="search_field" class="col-xs-12 collapse">
+          <div class="form-group search-bar has-feedback has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search courses, Tools and more...">
+          </div>
+        </div>
         <!--search bar-->
+
         <div class="nav notify-row" id="top_menu">
           <!--  notification start -->
           <ul class="nav top-menu">
@@ -1656,7 +1678,7 @@
             <div class="row hidden-sm hidden-md hidden-lg so-footer-bg mt-50">
             <div class="col-xs-12 pt-40 pb-40">
               <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
+                <div class="col-xs-6 col-xs-offset-2">
                  <div class="form-group">
                     <img src="assets/img/world_footer.png" class="img-responsive xs-earth" height="15" width="15" alt="">
                     <select class="form-control left" id="sel1">

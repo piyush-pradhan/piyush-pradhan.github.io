@@ -135,6 +135,11 @@ h6 {
   font-size: 30px;
 }
 
+.fz-40
+{
+  font-size: 40px;
+}
+
 .fz-48 {
   font-size: 48px !important;
 }
@@ -270,6 +275,11 @@ h6 {
 
 .ml-20 {
   margin-left: 20px;
+}
+
+.ml-25
+{
+  margin-left:25px;
 }
 
 .ml-30 {
@@ -1069,7 +1079,7 @@ a.logo span {
 /*search bar*/
 
 .search-bar {
-  width: 40%;
+  width: 38%;
   float: left;
   margin-top: 10px;
   height: 13px;
