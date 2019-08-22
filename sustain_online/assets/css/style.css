@@ -788,7 +788,8 @@ ul.top-menu>li>.logout {
   position: fixed;
   background: #fff;
   box-shadow: 0 9px 18px 0 #0000002e;
-  overflow-y:scroll;
+  overflow:auto;
+  overflow-x:hidden;
 }
 #sidebar::-webkit-scrollbar
 {
@@ -1157,8 +1158,8 @@ ul.top-menu>li>a:focus {
   max-width: 300px !important;
   min-width: 160px !important;
   top: 42px;
-  left: -13em;
-  width: 235px !important;
+  left: -8em;
+  width: 100% !important;
   padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
   border: none !important;
@@ -1561,9 +1562,9 @@ select {
   border: none;
   outline: none;
   display: inline-block;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
   cursor: pointer;
   width: 150px;
   -webkit-border-radius: 20px;
@@ -2706,6 +2707,50 @@ label {
   min-height: 900px;
 }
 
+.so-footer-bg
+{
+  background-color:#efefef;
+}
+.so-footer-bg a
+{
+  color:#222;
+  font-weight:600;
+}
+
+.so-footer-bg select
+{
+  border:none;
+  background:#efefef;
+  box-shadow:none !important;
+  width:82%;
+  outline:0;
+  float:right;
+}
+.so-footer-bg select:focus
+{
+  border:none;
+  background:#efefef;
+  box-shadow:none !important;
+  width:82%;
+  outline:0;
+  float:right;
+}
+
+.so-footer-bg img
+{
+  position: relative;
+  top: 25px;
+  right: 0px;
+  left: 15px;
+}
+
+.so-footer-bg img.copyright {
+    position: relative;
+    top: 0;
+    right: 0px;
+    left: 0;
+}
+
 /* Custom CSS*/
 .see-all-anchor {
   color: #555;
@@ -2895,6 +2940,7 @@ fieldset.so-border {
   /* -webkit-box-shadow: 0px 0px 0px 0px #000;
   box-shadow: 0px 0px 0px 0px #000; */
   border-radius:5px;
+  height: 5em;
 }
 legend.so-border {
   font-size: 1.2em !important;
@@ -2913,6 +2959,14 @@ legend.so-border {
   padding: 2%;
   outline: none;
   height: 40px;
+  box-shadow:none;
+}
+
+.so_input_text:focus
+{
+  outline:none;
+-webkit-box-shadow: none;
+        box-shadow: none;
 }
 .so_textarea
 {
@@ -3257,6 +3311,16 @@ p.background span {
     font-size: 12px;
     padding: 0.8em 3em;
 }
+
+.unit-btn
+{
+  background:#fff;
+}
+.unit-dd
+{
+  width: 80px;
+  min-width: 60px;
+}
 /*--- Profile Picture CSS ---*/
 .profile-pic
 {
@@ -3591,3 +3655,8 @@ p.brand-separator:before {
     left: -69px;
 
 }
+
+
+
+
+

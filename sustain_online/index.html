@@ -8,19 +8,22 @@
     <meta name="keyword" content="Sustain Online">
     <title>Sustain Online</title>
     <!-- Favicon Code -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css" integrity="sha256-AaQqnjfGDRZd/lUp0Dvy7URGOyRsh8g9JdWUkyYxNfI=" crossorigin="anonymous" />
+
     <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+
     <!-- Custom styles  -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
@@ -344,23 +347,68 @@
         </div>
       </aside>
       <nav id="resp-sidebar" class="hidden-md hidden-lg">
-                        <ul class="xs-sm-nav-1 mt-90 pad-zero" >
+            <ul class="xs-sm-nav-1 mt-50 pad-zero" >
               <li><a href="" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
               <li><a href=""><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
               <li><a href=""><i class="fa fa-wrench"></i><span>Tools</span></a></li>
+              <li><a class="" href="tools.html"><i class="fa fa-leaf"></i><span>Reporting</span></a></li>
             </ul>
 
             <ul class="xs-sm-nav-2 pad-zero">
-              <li><a href=""><i class="fa fa-tasks"></i><span>My Progress</span></a></li>
-              <li><a href=""><i class="fa fa-heart"></i><span>My Favorites</span></a></li>
-              <li><a href=""><i class="fa fa-history"></i><span>My Activity</span></a></li>
+              <li><h6 class="col-light">Management</h6></li>
+              <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#um_list_resp">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-users"></i>
+              <span>User Management</span>
+              </a>
+              <div id="um_list_resp" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="invite_user.html" class="pad-zero">Invite Users</a></li>
+                    <li class="mt-15"><a href="profile.html" class="pad-zero">Edit Users</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
+            <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#analytics_resp">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-chart-pie"></i>
+              <span>Analytics</span>
+              </a>
+              <div id="analytics_resp" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="" class="pad-zero">Invitations</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Course Completion</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Project Creation</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
             </ul>
 
-            <!-- <ul class="xs-sm-nav-3 pad-zero">
-              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-            </ul> -->
+            <ul class="xs-sm-nav-3 pad-zero">
+              <li><h6 class="col-light">My List</h6></li>
+              <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#my_progress_resp">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-tasks"></i>
+              <span>My Progress</span>
+              </a>
+              <div id="my_progress_resp" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <ul>
+                    <li><a href="" class="pad-zero">Finished Courses</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">Courses in Progress</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">My Projects</a></li>
+                    <li class="mt-15"><a href="" class="pad-zero">My Insights</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
+            </ul>
       </nav>
       <div class="overlay"></div>
       <!--sidebar end-->
@@ -504,7 +552,7 @@
           <!--- Compulsory Content slider starts -->
           <div class="row mt">
             <div class="col-md-12 col-sm-12">
-              <h5>Compulsory content you are enrolled in <span><a href="JavaScript:Void(0);" data-toggle="popover" data-content="This is some information about Compulsory Courses"><i class="fa fa-info-circle"></i></a></span></h5>
+              <h5>Compulsory content you are enrolled in <span><a href="JavaScript:Void(0);" data-toggle="popover" data-placement="bottom" data-content="This is some information about Compulsory Courses"><i class="fa fa-info-circle"></i></a></span></h5>
             </div>
             <!-- /col-md-12-->
           </div>
@@ -707,7 +755,7 @@
               <hr/>
               <div class="row mt">
                 <div class="col-md-12 col-sm-12">
-                  <h5>New tools and courses we are proud to present <span><a href="JavaScript:Void(0);" data-toggle="popover" data-content="This is some information about New tools and courses"><i class="fa fa-info-circle"></i></a></span></h5>
+                  <h5>New tools and courses we are proud to present <span><a href="JavaScript:Void(0);" data-toggle="popover" data-placement="bottom" data-content="This is some information about New tools and courses"><i class="fa fa-info-circle"></i></a></span></h5>
                 </div>
                 <!-- /col-md-12-->
               </div>
@@ -909,7 +957,7 @@
           <div class="row mt">
             <div class="col-md-12 col-sm-12">
               <hr/>
-              <h5>Recommended for you <span><a href="JavaScript:Void(0);" data-toggle="popover" data-content="This is some information about Recommended for you courses"><i class="fa fa-info-circle"></i></a></span></h5>
+              <h5>Recommended for you <span><a href="JavaScript:Void(0);" data-toggle="popover" data-placement="bottom" data-content="This is some information about Recommended for you courses"><i class="fa fa-info-circle"></i></a></span></h5>
             </div>
             <!-- /col-md-12-->
           </div>
@@ -1161,7 +1209,7 @@
           <div class="row mt">
             <div class="col-md-12 col-sm-12">
               <hr/>
-              <h5>What others are learning <span><a href="JavaScript:Void(0);" data-toggle="popover" data-content="This is some information about What others are learning"><i class="fa fa-info-circle"></i></a></span></h5>
+              <h5>What others are learning <span><a href="JavaScript:Void(0);" data-toggle="popover" data-placement="bottom" data-content="This is some information about What others are learning"><i class="fa fa-info-circle"></i></a></span></h5>
             </div>
             <!-- /col-md-12-->
           </div>
@@ -1362,7 +1410,7 @@
           <div class="row mt">
             <div class="col-md-12 col-sm-12">
               <hr/>
-              <h5 class="">Latest news from SustainOnline blog <span><a href="JavaScript:Void(0);" data-toggle="popover" data-content="This is some information about Latest news from SustainOnline blog"><i class="fa fa-info-circle"></i></a></span></h5>
+              <h5 class="">Latest news from SustainOnline blog <span><a href="JavaScript:Void(0);" data-toggle="popover" data-placement="bottom" data-content="This is some information about Latest news from SustainOnline blog"><i class="fa fa-info-circle"></i></a></span></h5>
             </div>
             <!-- /col-md-12-->
           </div>
@@ -1559,6 +1607,98 @@
           </div>
           <!-- Latest news Slider Starts -->
           <!-- /row -->
+          <!-- Footer Section Starts -->
+          <!-- SM/MD/LG footer Starts -->
+          <div class="row hidden-xs so-footer-bg mt-50">
+            <div class="col-sm-10 col-sm-offset-1 pt-40 pb-40">
+              <div class="row">
+                <div class="col-sm-10 mt-20">
+                    <div class="col-sm-1"><a href=" " class="col-light">About</a></div>
+                    <div class="col-sm-1"><a href=" " class="col-light">Support</a></div>
+                    <div class="col-sm-1"><a href=" " class="col-light">FAQ</a></div>
+                    <div class="col-sm-1"><a href=" " class="col-light">Blog</a></div>
+                </div>
+                <div class="col-sm-2">
+                 <div class="form-group">
+                    <img src="assets/img/world_footer.png" class="img-responsive" height="15" width="15" alt="">
+                    <select class="form-control left" id="sel1">
+                      <option>English</option>
+                      <option>German</option>
+                      <option>Japanese</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+                <div class="col-sm-1 pr-0">
+                  <h1 class="text-center mt-0 col-light">SO</h1>
+                </div>
+                <div class="col-sm-6 pl-0">
+                  <h6 class="mt-5 col-light"><span><img src="assets/img/copyright.png" class="img-responsive copyright left" alt=""></span> 2019 SustainOnline AG</h6>
+                </div>
+                <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-sm-6 text-right pr-0">
+                      <a href="#"><h6 class="mt-5 col-light">Terms & Conditions</h6></a>
+                    </div>
+                    <div class="col-sm-6 text-right pr-0">
+                      <a href="#"><h6 class="mt-5 col-light">Privacy & Cookie Policy</h6></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- SM/MD/LG footer ends -->
+          <!-- XS footer starts -->
+            <div class="row hidden-sm hidden-md hidden-lg so-footer-bg mt-50">
+            <div class="col-xs-12 pt-40 pb-40">
+              <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                 <div class="form-group">
+                    <img src="assets/img/world_footer.png" class="img-responsive xs-earth" height="15" width="15" alt="">
+                    <select class="form-control left" id="sel1">
+                      <option>English</option>
+                      <option>German</option>
+                      <option>Japanese</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-12 text-center fw900  mt-20">
+                    <div class="col-xs-3"><a href=" " class="col-light">About</a></div>
+                    <div class="col-xs-3"><a href=" " class="col-light">Support</a></div>
+                    <div class="col-xs-3"><a href=" " class="col-light">FAQ</a></div>
+                    <div class="col-xs-3"><a href=" " class="col-light">Blog</a></div>
+                </div>
+
+              </div>
+              <div class="row">
+                <hr>
+                <div class="col-xs-12 text-center">
+                  <h1 class="text-center mt-0 col-light fz-48">SO</h1>
+                </div>
+                <div class="col-xs-12 text-center">
+                  <h5 class="mt-5 col-light"><span><img src="assets/img/copyright.png" class="img-responsive copyright left" alt=""></span> 2019 SustainOnline AG</h5>
+                </div>
+
+                <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-xs-12 text-center">
+                      <a href="#"><h5 class="mt-5 col-light">Terms & Conditions</h5></a>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                      <a href="#"><h5 class="mt-5 col-light">Privacy & Cookie Policy</h5></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- XS footer starts -->
+          <!-- Footer Section Starts -->
           <!-- Go to Top button Starts -->
           <div class="row mt">
             <div class="col-md-12 col-sm-12">

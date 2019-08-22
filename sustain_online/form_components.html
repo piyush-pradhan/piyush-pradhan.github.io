@@ -26,6 +26,8 @@
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/filter-dd.css">
+    <!-- Multiselect Dropdown -->
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -574,6 +576,73 @@
               </div>
             </div>
             <!-- Sustaain Online Buttons -->
+            <!-- Multi Select -->
+            <div class="row mt-30">
+              <hr/>
+              <div class="col-sm-12">
+                <h5>Multi Select</h5>
+                <hr/>
+              </div>
+              <div class="col-sm-4">
+                <fieldset class="so-border">
+                  <legend class="so-border">Single Select</legend>
+                  <div class="control-group">
+                    <div class="controls">
+                       <select class="selectpicker form-control" id="number" data-container="body" data-live-search="true" title="Select a number" data-hide-disabled="true">
+                         <option value="">1</option>
+                         <option value="">2</option>
+                         <option value="">3</option>
+                       </select>
+                    </div>
+                  </div>
+                </fieldset>
+
+              </div>
+              <div class="col-sm-4">
+                 <fieldset class="so-border">
+                  <legend class="so-border">Multiple Select</legend>
+                  <div class="control-group">
+                    <div class="controls">
+                       <select multiple class="selectpicker form-control" id="number-multiple" data-container="body" data-live-search="true" title="Select a number" data-hide-disabled="true" data-actions-box="true" data-virtual-scroll="false">
+                         <option value="">1</option>
+                         <option value="">2</option>
+                         <option value="">3</option>
+                       </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-sm-4">
+
+              <fieldset class="so-border">
+                  <legend class="so-border">Unit Select</legend>
+                  <div class="control-group">
+                    <div class="controls">
+                       <div class="form-group">
+
+                        <div class="input-group">
+                            <input type="text" value="" class="form-control so_input_text" name="text">
+                            <div class="input-group-btn bs-dropdown-to-select-group">
+                                <button type="button" class="btn unit-btn dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown">
+                                    <span data-bind="bs-drp-sel-label">Unit</span>
+                                    <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                                    <span class="caret"></span>
+                                    <span class="sr-only"></span>
+                                </button>
+                                <ul class="dropdown-menu unit-dd" role="menu" style="">
+                                    <li data-value="1"><a href="#">Kg</a></li>
+                                    <li data-value="2"><a href="#">gm</a></li>
+                                    <li data-value="3"><a href="#">mg</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <!-- Multi Select -->
           </div>
           <!-- Go to Top button Starts -->
           <div class="row mt">
@@ -658,5 +727,20 @@
     <script src="assets/js/common-scripts.js"></script>
     <script src="assets/js/custom_support.js"></script>
     <script src="assets/js/scrollToTop.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script>
+      $(document).ready(function(e){
+    $( document ).on( 'click', '.bs-dropdown-to-select-group .dropdown-menu li', function( event ) {
+      var $target = $( event.currentTarget );
+    $target.closest('.bs-dropdown-to-select-group')
+      .find('[data-bind="bs-drp-sel-value"]').val($target.attr('data-value'))
+      .end()
+      .children('.dropdown-toggle').dropdown('toggle');
+    $target.closest('.bs-dropdown-to-select-group')
+        .find('[data-bind="bs-drp-sel-label"]').text($target.context.textContent);
+    return false;
+  });
+});
+    </script>
   </body>
 </html>
