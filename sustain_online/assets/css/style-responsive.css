@@ -50,6 +50,11 @@
     top: -3px;
     left: 75%;
   }
+  .sidebar-toggle-box {
+  float: left;
+  padding-right: 0px;
+  margin-top: 18px;
+  }
   .sidebar-toggle-box .fa-bars {
     cursor: pointer;
     display: inline-block;
@@ -61,6 +66,32 @@
     top: -3px;
     left: calc(100% - 68px);
   }
+  .sm-earth
+  {
+    height: 15px;
+    width: 15px !important;
+  }
+  .so-footer-bg img {
+    position: relative;
+    top: 22px;
+    right: 0px;
+    left: 15px;
+}
+.nav-tabs {
+    border: none;
+    padding: 1% 5% 0 5%;
+    box-shadow: 0 3px 6px 0 #c6c5c529;
+    background-color: #f8f8f8;
+}
+a.logo {
+    font-size: 18px;
+    color: #000;
+    float: left;
+    margin-top: 15px;
+    text-transform: normal;
+    font-weight: 700;
+    margin-left: -2em;
+}
 }
 
 
@@ -321,7 +352,7 @@
     transform: translateY(-50%);
   }
   .myproject-drop-down {
-    left: -7em;
+    left: -11.5em;
   }
   /*============ My Branding CSS ============*/
   p.brand-separator:before {
@@ -369,6 +400,11 @@
   .navbar-inverse .navbar-toggle:focus {
     background-color: #ccc;
     border-color: #ccc;
+  }
+  .sidebar-toggle-box {
+  float: left;
+  padding-right: 0px;
+  margin-top: 18px;
   }
   .sidebar-toggle-box .fa-bars {
     cursor: pointer;
@@ -418,7 +454,7 @@
     margin-top: 10px;
     height: 13px;
     margin-left: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
   .mg-bottom {
     margin-bottom: 30px;
@@ -448,6 +484,12 @@
     padding: 1% 2% 0 2%;
     box-shadow: 0 3px 6px 0 #c6c5c529;
     background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav-tabs > li {
+    text-align: center;
+    width: calc(100% * 5);
   }
   .profile-h2 {
     font-size: 20px;
@@ -598,6 +640,7 @@
   }
   .header {
     position: fixed;
+    z-index: 9999;
   }
   a.logo {
     font-size: 16px;
@@ -738,6 +781,11 @@
     display: inline-block;
     width: 75%;
   }
+  .sidebar-toggle-box {
+  float: left;
+  padding-right: 0px;
+  margin-top: 18px;
+  }
   .sidebar-toggle-box .fa-bars {
     cursor: pointer;
     display: inline-block;
@@ -838,6 +886,12 @@
     padding: 1% 2% 0 2%;
     box-shadow: 0 3px 6px 0 #c6c5c529;
     background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav-tabs > li {
+    text-align: center;
+    width: calc(100% * 5);
   }
   .profile-h2 {
     font-size: 20px;
@@ -1085,4 +1139,12 @@
   outline:0;
   float:right;
 }
+@-moz-document url-prefix() {
+    .xs-earth {
+        height: 15px;
+        width: 15px;
+        top: 23px !important;
+        left: 58px !important;
+      }
+     }
 }
