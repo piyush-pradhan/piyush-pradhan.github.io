@@ -213,6 +213,7 @@ a.logo {
     border-bottom-right-radius: 250% 180px;
     padding: 0% 15%;
   }
+
   .profile-pic {
     height: 70px;
     width: 70px !important;
@@ -354,6 +355,20 @@ a.logo {
   .myproject-drop-down {
     left: -11.5em;
   }
+
+  #um_list_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #analytics_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #my_progress_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+
   /*============ My Branding CSS ============*/
   p.brand-separator:before {
     border-top: 1px solid #9D9D9D;
@@ -472,12 +487,17 @@ a.logo {
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
     padding: 0% 0%;
-    height: 250px;
+    height: 180px;
   }
+  .banner_text  h2
+  {
+    font-size: 18px;
+  }
+
   .banner_img img {
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    height: 250px;
+    height: 180px;
   }
   .nav-tabs {
     border: none;
@@ -637,6 +657,19 @@ a.logo {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+  }
+
+  #um_list_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #analytics_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #my_progress_resp ul
+  {
+      padding-inline-start: 55px;
   }
   .header {
     position: fixed;
@@ -873,16 +906,20 @@ a.logo {
     top: 0;
     width: 100%;
     right: 0;
-    left: 4.2vw;
+    left: 4.1vw;
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
     padding: 0% 0%;
-    height: 250px;
+    height: 160px;
+  }
+   .banner_text  h2
+  {
+    font-size: 16px;
   }
   .banner_img img {
     border-bottom-left-radius: 250% 180px;
     border-bottom-right-radius: 250% 180px;
-    height: 250px;
+    height: 160px;
   }
   .nav-tabs {
     border: none;
@@ -1042,6 +1079,18 @@ a.logo {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+  }
+  #um_list_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #analytics_resp ul
+  {
+      padding-inline-start: 55px;
+  }
+  #my_progress_resp ul
+  {
+      padding-inline-start: 55px;
   }
   .header {
     position: fixed;
