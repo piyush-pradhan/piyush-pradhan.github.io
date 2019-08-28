@@ -1,13 +1,11 @@
 /* Import fonts */
-
-@import url(https://fonts.googleapis.com/css?family=Ruda:400,700,900);
-
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ruda&display=swap');
 /* BASIC THEME CONFIGURATION */
 
 body {
   color: #797979;
   background: #f7f7f7;
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
   font-size: 13px;
@@ -614,7 +612,10 @@ h6 {
 .modal-title {
   color: white;
 }
-
+.btn,.owl-next,.owl-prev:focus
+{
+  outline:none !important;
+}
 .btn-round {
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -1173,7 +1174,7 @@ ul.top-menu>li>a:focus {
 .notify-row .badge {
   position: absolute;
   right: -2px;
-  top: 0px;
+  top: -5px;
   z-index: 100;
   font-size: 10px;
   padding: 2px 4px;

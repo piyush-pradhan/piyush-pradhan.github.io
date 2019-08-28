@@ -43,40 +43,53 @@
         *********************************************************************************************************************************************************** -->
       <!--header start-->
       <header class="header black-bg">
-        <div class="sidebar-toggle-box col-xs-1 pl-0">
-          <div class="fa fa-bars hidden-xs hidden-sm"></div>
-          <i class="fa fa-bars hidden-md hidden-lg" id="resp-sidebarCollapse"></i>
+        <!-- Navigation Hamburger Menu Icon responsive Starts -->
+        <div class="sidebar-toggle-box col-xs-1 hidden-md hidden-lg pl-0 pr-0">
+          <i class="fa fa-bars" id="resp-sidebarCollapse"></i>
         </div>
+        <!-- Navigation Hamburger Menu Icon responsive Starts -->
+
+        <!-- Navigation Hamburger Menu Icon Desktop Starts -->
+        <div class="sidebar-toggle-box pl-0">
+          <div class="fa fa-bars hidden-xs hidden-sm"></div>
+        </div>
+        <!-- Navigation Hamburger Menu Icon Desktop Starts -->
+
         <!--logo start-->
         <div class="hidden-xs">
           <a href="index.html" class="logo">SustainOnline</a>
         </div>
         <div class="col-xs-9 hidden-sm hidden-md hidden-lg">
-          <h1 class="col-light text-center fw900 fz-40 mb-0 mt-5 ml-25">SO</h1>
+          <h1 class="text-center fw900 fz-40 mb-0 mt-5 ml-25"><a class="col-light" href="index.html">SO</a></h1>
         </div>
         <!--logo end-->
-        <!--search bar-->
+
+        <!--search bar Desktop Starts -->
         <div class="form-group search-bar has-feedback has-search hidden-xs">
           <span class="fa fa-search form-control-feedback"></span>
           <input type="text" class="form-control" placeholder="Search courses, Tools and more...">
         </div>
+        <!--Search bar Desktop Ends -->
+        <!--Search bar REsponsive Starts -->
         <div class="col-xs-1 hidden-sm hidden-md hidden-lg pl-0 pr-0">
           <a href="#search_field" data-toggle="collapse"><i class="fa fa-search col-light fz-20 mt-15"></i></a>
         </div>
-        <!--Profile Icon -->
+        <!--Search bar Responsive Ends -->
+        <!--Profile Icon Starts-->
           <div class="col-xs-1 hidden-sm hidden-md hidden-lg pr-0">
             <a href="profile.html" class="float-right">
             <img src="assets/img/ui-zac.jpg" alt="My Account" class="img-circle mt-10" width="30">
             </a>
           </div>
-        <!-- Profile Icon -->
+        <!-- Profile Icon Ends -->
+        <!-- Search bar responsive starts -->
         <div id="search_field" class="col-xs-12 collapse">
           <div class="form-group search-bar has-feedback has-search">
           <span class="fa fa-search form-control-feedback"></span>
           <input type="text" class="form-control" placeholder="Search courses, Tools and more...">
           </div>
         </div>
-        <!--search bar-->
+        <!--search bar responsive Ends-->
 
         <div class="nav notify-row" id="top_menu">
           <!--  notification start -->
@@ -203,13 +216,13 @@
               <ul class="dropdown-menu extended inbox">
                 <div class="notify-arrow notify-arrow-green"></div>
                 <li>
-                  <a href="">Profile</a>
+                  <a href="profile.html">Profile</a>
                 </li>
                 <li>
                     <a href="">Dashboard</a>
                 </li>
                 <li>
-                    <a href="">My Projects</a>
+                    <a href="my_projects.html">My Projects</a>
                 </li>
                 <li>
                     <a href="">Sign Out</a>
@@ -235,51 +248,92 @@
         <div id="sidebar" class="half-nav hidden-sm hidden-xs">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
+            <!-- Desktop/iPad/Smartphone Home -->
             <li class="mt">
-              <a class="active" href="index.html">
+              <a class="" href="index.html" title="Home">
               <i class="fa fa-home"></i>
               <span>Home</span>
               </a>
             </li>
+            <!-- Desktop/iPad/Smartphone Home -->
+            <!-- Desktop/iPad/Smartphone Academy -->
             <li class="">
-              <a class="" href="academy.html">
+              <a class="" href="academy.html" title="Academy">
               <i class="fa fa-graduation-cap"></i>
               <span>Academy</span>
               </a>
             </li>
+            <!-- Desktop/iPad/Smartphone Academy -->
+            <!-- Desktop/iPad/Smartphone Tools -->
             <li class="">
-              <a class="" href="tools.html">
+              <a class="" href="tools.html" title="Tools">
               <i class="fa fa-wrench"></i>
               <span>Tools</span>
               </a>
             </li>
+            <!-- Desktop/iPad/Smartphone Tools -->
+            <!-- Desktop/iPad/Smartphone Reporting -->
             <li class="">
-              <a class="" href="tools.html">
+              <a class="" href="" title="Reporting">
               <i class="fa fa-leaf"></i>
               <span>Reporting</span>
               </a>
             </li>
+            <!-- Desktop/iPad/Smartphone Reporting -->
+            <!-- Desktop/iPad icon only menu User Management -->
+            <li class="toggle-content"><a href="#um-dd1" data-toggle="collapse" title="User Management"><i class="fa fa-users icon-menu-pos"></i></a></li>
+            <li>
+              <div id="um-dd1" class="collapse">
+                <a href="" class="pl-10 mt-10" title="Invite User"><i class="fa fa-user-plus icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="Edit User"><i class="fa fa-user-edit icon-menu-pos fz-20"></i></a>
+              </div>
+            </li>
+            <!-- Desktop/iPad icon only menu User Management -->
+            <!-- Desktop/iPad icon only menu Analytics -->
+            <li class="toggle-content"><a href="#um-dd2" data-toggle="collapse" title="Analytics"><i class="fa fa-chart-pie icon-menu-pos"></i></a></li>
+            <li>
+              <div id="um-dd2" class="collapse">
+                <a href="" class="pl-10 mt-10" title="Invitations"><i class="fa fa-envelope-open icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="Courses Completion"><i class="fa fa-chart-line icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="Project Creation"><i class="fa fa-briefcase icon-menu-pos fz-20"></i></a>
+              </div>
+            </li>
+            <!-- Desktop/iPad icon only menu Analytics -->
+            <!-- Desktop/iPad icon only menu My Progress -->
+            <li class="toggle-content"><a href="#um-dd3" data-toggle="collapse" title="My Progress"><i class="fa fa fa-tasks icon-menu-pos"></i></a></li>
+            <li>
+              <div id="um-dd3" class="collapse">
+                <a href="" class="pl-10 mt-10" title="Finished Courses"><i class="fa fa-check-circle icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="Courses in Progress"><i class="fa fa-clock icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="My Projects"><i class="fa fa-file-alt icon-menu-pos fz-20"></i></a>
+                <a href="" class="pl-10 mt-10" title="My Insights"><i class="fa fa-chart-bar icon-menu-pos fz-20"></i></a>
+              </div>
+            </li>
+            <!-- Desktop/iPad icon only menu My Progress -->
           </ul>
           <ul class="sidebar-menu second" id="nav-accordion">
             <hr/>
             <li>
               <p>Management</p>
             </li>
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) User Management -->
             <li class="">
-              <a class="accordion-toggle" data-toggle="collapse" href="#um_list">
+              <a class="accordion-toggle active" data-toggle="collapse" href="#um_list">
               <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
               <i class="fa fa-users"></i>
               <span>User Management</span>
               </a>
-              <div id="um_list" class="panel-collapse collapse">
+              <div id="um_list" class="panel-collapse collapse in">
               <div class="panel-body">
                   <ul>
-                    <li><a href="invite_user.html" class="pad-zero">Invite Users</a></li>
-                    <li class="mt-15"><a href="profile.html" class="pad-zero">Edit Users</a></li>
+                    <li><a href="invite_user.html" class="active">Invite Users</a></li>
+                    <li class="mt-15"><a href="profile.html" class="">Edit Users</a></li>
                   </ul>
               </div>
             </div>
             </li>
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) User Management -->
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) Analytics -->
             <li class="">
               <a class="accordion-toggle" data-toggle="collapse" href="#analytics">
               <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
@@ -289,19 +343,21 @@
               <div id="analytics" class="panel-collapse collapse">
               <div class="panel-body">
                   <ul>
-                    <li><a href="" class="pad-zero">Invitations</a></li>
-                    <li class="mt-15"><a href="" class="pad-zero">Course Completion</a></li>
-                    <li class="mt-15"><a href="" class="pad-zero">Project Creation</a></li>
+                    <li><a href="">Invitations</a></li>
+                    <li class="mt-15"><a href="">Course Completion</a></li>
+                    <li class="mt-15"><a href="">Project Creation</a></li>
                   </ul>
               </div>
             </div>
             </li>
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) Analytics -->
           </ul>
           <ul class="sidebar-menu second" id="nav-accordion">
             <hr/>
             <li>
               <p>My List</p>
             </li>
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) My Preogress -->
             <li class="">
               <a class="accordion-toggle" data-toggle="collapse" href="#myprogress">
               <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
@@ -311,14 +367,15 @@
               <div id="myprogress" class="panel-collapse collapse">
               <div class="panel-body">
                   <ul>
-                    <li><a href="" class="pad-zero">Finished Courses</a></li>
-                    <li class="mt-15"><a href="" class="pad-zero">Courses in Progress</a></li>
-                    <li class="mt-15"><a href="my_projects.html" class="pad-zero">My Projects</a></li>
-                    <li class="mt-15"><a href="" class="pad-zero">My Insights</a></li>
+                    <li><a href="">Finished Courses</a></li>
+                    <li class="mt-15"><a href="">Courses in Progress</a></li>
+                    <li class="mt-15"><a href="my_projects.html">My Projects</a></li>
+                    <li class="mt-15"><a href="">My Insights</a></li>
                   </ul>
               </div>
             </div>
             </li>
+            <!-- Desktop/iPad (Hidden, when icon only menu triggered) My Preogress -->
             <!-- <li class="">
               <a class="" href="index.html">
               <i class="fa fa-heart"></i>
@@ -368,12 +425,14 @@
           <!-- sidebar menu end-->
         </div>
       </aside>
+
+      <!-- Mobile Only Navigation Starts -->
       <nav id="resp-sidebar" class="hidden-md hidden-lg">
             <ul class="xs-sm-nav-1 mt-50 pad-zero" >
-              <li><a href="" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
-              <li><a href=""><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
-              <li><a href=""><i class="fa fa-wrench"></i><span>Tools</span></a></li>
-              <li><a class="" href="tools.html"><i class="fa fa-leaf"></i><span>Reporting</span></a></li>
+              <li><a href="index.html" class="current"><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href="academy.html"><i class="fa fa-graduation-cap"></i><span>Academy</span></a></li>
+              <li><a href="tools.html"><i class="fa fa-wrench"></i><span>Tools</span></a></li>
+              <li><a class="" href=""><i class="fa fa-leaf"></i><span>Reporting</span></a></li>
             </ul>
 
             <ul class="xs-sm-nav-2 pad-zero">
@@ -424,7 +483,7 @@
                   <ul>
                     <li><a href="" class="pad-zero">Finished Courses</a></li>
                     <li class="mt-15"><a href="" class="pad-zero">Courses in Progress</a></li>
-                    <li class="mt-15"><a href="" class="pad-zero">My Projects</a></li>
+                    <li class="mt-15"><a href="my_projects.html" class="pad-zero">My Projects</a></li>
                     <li class="mt-15"><a href="" class="pad-zero">My Insights</a></li>
                   </ul>
               </div>
@@ -432,6 +491,7 @@
             </li>
             </ul>
       </nav>
+      <!-- Mobile Only Navigation Ends -->
       <div class="overlay"></div>
       <!--sidebar end-->
       <!-- **********************************************************************************************************************************************************
@@ -583,6 +643,7 @@
             <div class="col-md-12 col-sm-12">
               <div class="owl-carousel owl-theme">
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/1.png" alt="">
@@ -596,8 +657,10 @@
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/hat-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/2.png" alt="">
@@ -611,8 +674,10 @@
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/3.png" alt="">
@@ -626,8 +691,10 @@
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/4.png" alt="">
@@ -641,8 +708,10 @@
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -656,8 +725,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -671,8 +742,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -686,8 +759,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -701,8 +776,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -716,8 +793,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -731,8 +810,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -746,8 +827,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -761,6 +844,7 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
@@ -786,6 +870,7 @@
                 <div class="col-md-12 col-sm-12 mb">
                   <div class="owl-carousel-2 owl-theme">
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="assets/img/main_content/5.png" alt="">
@@ -799,8 +884,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="assets/img/main_content/6.png" alt="">
@@ -814,14 +901,16 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="assets/img/main_content/7.png" alt="">
                         <div class="col-md-12 pl-zero">
                           <h6 class="text-left">Sustainable Workplaces</h6>
-                          <p class="text-left small">6 courses <span>.</span> <span> 0 Completed <span>.</span><span class="label label-so-2">New</span></p>
+                          <p class="text-left small">6 courses <span>.</span> <span> 0 Completed </span>.</span><span class="label label-so-2">New</span></p>
                           <p class="text-left">
                             <span class="label label-so">Lifestyle</span>
                             <span class="label label-so">Sustainability</span>
@@ -829,8 +918,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -844,8 +935,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -859,8 +952,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -874,8 +969,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -889,8 +986,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -904,8 +1003,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -919,8 +1020,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -934,8 +1037,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -949,8 +1054,10 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                     <div class="item">
+                      <a href="">
                       <div class="product-panel-2 ">
                         <div class="badge-2 badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                         <img src="https://place-hold.it/500x350" alt="">
@@ -964,6 +1071,7 @@
                           </p>
                         </div>
                       </div>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -988,6 +1096,7 @@
             <div class="col-md-12 col-sm-12">
               <div class="owl-carousel owl-theme">
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/tool-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/8.png" alt="">
@@ -1001,8 +1110,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/hat-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/9.png" alt="">
@@ -1016,8 +1127,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/10.png" alt="">
@@ -1031,11 +1144,13 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/tool-layer.png" class="img-responsive" alt=""></div>
-                    <img src="assets/img/main_content/11.png" alt="">
+                    <img src="https://place-hold.it/500x350" alt="">
                     <div class="col-md-12 pl-zero">
                       <h6 class="text-left">Elevator Pitch for Future Success</h6>
                       <p class="text-left small">3 hours</p>
@@ -1046,8 +1161,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1061,8 +1178,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1076,8 +1195,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1091,8 +1212,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1106,8 +1229,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1121,8 +1246,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1136,8 +1263,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1151,8 +1280,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1166,6 +1297,7 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
@@ -1240,6 +1372,7 @@
             <div class="col-md-12 col-sm-12">
               <div class="owl-carousel owl-theme">
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/1.png" alt="">
@@ -1253,8 +1386,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/bookmark-ribbon.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/10.png" alt="">
@@ -1268,14 +1403,16 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/3.png" alt="">
                     <div class="col-md-12 pl-zero">
                       <h6 class="text-left">Change and Transformation</h6>
-                      <p class="text-left small">8 min<span></p>
+                      <p class="text-left small">8 min</p>
                       <p class="text-left">
                         <span class="label label-so">Introduction</span>
                         <span class="label label-so">Sustainability</span>
@@ -1283,8 +1420,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/hat-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/4.png" alt="">
@@ -1298,8 +1437,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1313,8 +1454,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1328,8 +1471,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1343,8 +1488,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1358,8 +1505,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1373,8 +1522,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1388,8 +1539,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1403,8 +1556,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1418,6 +1573,7 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
@@ -1441,6 +1597,7 @@
             <div class="col-md-12 col-sm-12">
               <div class="owl-carousel owl-theme">
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/world-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/12.png" alt="">
@@ -1454,8 +1611,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/world-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/13.png" alt="">
@@ -1469,8 +1628,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/world-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/14.png" alt="">
@@ -1484,8 +1645,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/world-layer.png" class="img-responsive" alt=""></div>
                     <img src="assets/img/main_content/15.png" alt="">
@@ -1499,8 +1662,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1514,8 +1679,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1529,8 +1696,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1544,8 +1713,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1559,8 +1730,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1574,8 +1747,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1589,8 +1764,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1604,8 +1781,10 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="item">
+                  <a href="">
                   <div class="product-panel-2 ">
                     <div class="badge badge-hot"><img src="assets/img/book-layer.png" class="img-responsive" alt=""></div>
                     <img src="https://place-hold.it/500x350" alt="">
@@ -1619,6 +1798,7 @@
                       </p>
                     </div>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
@@ -1632,17 +1812,17 @@
           <!-- Footer Section Starts -->
           <!-- SM/MD/LG footer Starts -->
           <div class="row hidden-xs so-footer-bg mt-50">
-            <div class="col-sm-10 col-sm-offset-1 pt-40 pb-40">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 pt-40 pb-40">
               <div class="row">
-                <div class="col-sm-10 mt-20">
-                    <div class="col-sm-1"><a href=" " class="col-light">About</a></div>
-                    <div class="col-sm-1"><a href=" " class="col-light">Support</a></div>
-                    <div class="col-sm-1"><a href=" " class="col-light">FAQ</a></div>
-                    <div class="col-sm-1"><a href=" " class="col-light">Blog</a></div>
+                <div class="col-sm-9 col-md-10 mt-20">
+                    <div class="col-sm-3 col-md-1"><a href=" " class="col-light">About</a></div>
+                    <div class="col-sm-3 col-md-1"><a href=" " class="col-light">Support</a></div>
+                    <div class="col-sm-3 col-md-1"><a href=" " class="col-light">FAQ</a></div>
+                    <div class="col-sm-3 col-md-1"><a href=" " class="col-light">Blog</a></div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3 col-md-2">
                  <div class="form-group">
-                    <img src="assets/img/world_footer.png" class="img-responsive" height="15" width="15" alt="">
+                    <img src="assets/img/world_footer.png" class="img-responsive sm-earth" height="15" width="15" alt="">
                     <select class="form-control left" id="sel1">
                       <option>English</option>
                       <option>German</option>
@@ -1653,18 +1833,18 @@
               </div>
               <div class="row">
                 <hr>
-                <div class="col-sm-1 pr-0">
+                <div class="col-sm-1 col-md-1 pr-0">
                   <h1 class="text-center mt-0 col-light">SO</h1>
                 </div>
-                <div class="col-sm-6 pl-0">
+                <div class="col-sm-5 col-md-6 pl-0">
                   <h6 class="mt-5 col-light"><span><img src="assets/img/copyright.png" class="img-responsive copyright left" alt=""></span> 2019 SustainOnline AG</h6>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-6 col-md-5">
                   <div class="row">
-                    <div class="col-sm-6 text-right pr-0">
+                    <div class="col-sm-6 col-md-6 text-right pr-0">
                       <a href="#"><h6 class="mt-5 col-light">Terms & Conditions</h6></a>
                     </div>
-                    <div class="col-sm-6 text-right pr-0">
+                    <div class="col-sm-6 col-md-6 text-right pr-0">
                       <a href="#"><h6 class="mt-5 col-light">Privacy & Cookie Policy</h6></a>
                     </div>
                   </div>

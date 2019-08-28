@@ -63,6 +63,7 @@ $(document).ready(function() {
                 $('.overlay').addClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                //$('#main-content').css('margin-left' : '0');
             });
 
 
@@ -81,16 +82,20 @@ $(document).ready(function() {
             $('#sidebar').css({
                 'width': '210px',
                 'transition': 'all 0.9s ease',
-                'overflow-x' : 'hidden'
+                'overflow-x' : 'hidden',
+                'overflow-y' : 'auto'
             });
             $('#sidebar > ul').css({
                 'width': '210px',
                 'transition': 'all 0.9s ease'
-
+            });
+             $("#sidebar").removeClass("half-nav");
+            $('ul.sidebar-menu > li > a').css({
+                'border-radius': '0%',
             });
             $("#sidebar").removeClass("half-nav");
             $('ul.sidebar-menu > li > a:hover').css({
-                'border-radius': '0'
+                'border-radius': '0%',
             });
             $('ul.sidebar-menu > li > a > span').css({
                 'display': 'inline-block'
@@ -121,6 +126,8 @@ $(document).ready(function() {
                 'display': 'block',
                 'transition': 'all 0.9s ease'
             });
+            $('ul.sidebar-menu.second').css({'display' : 'block'});
+            $('.toggle-content').css({'display' : 'none'});
         } else {
             $('#main-content').css({
                 'margin-left': '60px',
@@ -129,7 +136,8 @@ $(document).ready(function() {
             $('#sidebar').css({
                 'margin-left': '0px',
                 'transition': 'all 0.9s ease',
-                'overflow' : 'hidden'
+                'overflow' : 'hidden',
+                'overflow-y' : 'auto'
             });
             $('#sidebar > ul').show();
             $('#sidebar > ul').css({
@@ -143,7 +151,7 @@ $(document).ready(function() {
             $('#sidebar').addClass("half-nav");
             $('ul.sidebar-menu > li > a').css({
                 'padding': '3px 0 3px 10px',
-                'border-radius': '0%'
+                'border-radius': '50%'
             });
             $('ul.sidebar-menu > li > a.active').css({
                 'padding': '3px 11px',
@@ -151,7 +159,7 @@ $(document).ready(function() {
             });
             $('ul.sidebar-menu > li > a:hover').css({
                 'padding': '3px 0 3px 7px',
-                'border-radius': '0%'
+                'border-radius': '50%'
             });
             $('ul.sidebar-menu > li > a span').css({
                 'display': 'none',
@@ -180,8 +188,11 @@ $(document).ready(function() {
                 'display': 'none',
                 'transition': 'all 0.9s ease'
             });
-        }
-    });
+            $('ul.sidebar-menu.second').css({'display' : 'none'});
+            $('.toggle-content').css({'display' : 'block'});
+            $('#um-dd3 > a:hover').css({'color': '#09b47d','background-color' : '#dcf1ea', 'border-radius' : '50%'})
 
-      })
+        }
+      });
+      });
 

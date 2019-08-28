@@ -103,7 +103,7 @@ a.logo {
 
 /* ====================================================*/
 
-@media (max-width: 768px) {
+@media (min-width:768px) and (max-width: 991px) {
   .resp-right {
     float: right;
   }
@@ -738,6 +738,9 @@ a.logo {
   outline:0;
   float:right;
 }
+#main-content {
+    margin-left: 0 !important;
+}
 }
 
 
@@ -1138,6 +1141,9 @@ a.logo {
   width:67%;
   outline:0;
   float:right;
+}
+#main-content {
+    margin-left: 0 !important;
 }
 @-moz-document url-prefix() {
     .xs-earth {
