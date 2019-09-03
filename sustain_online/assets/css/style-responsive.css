@@ -345,6 +345,12 @@ a.logo {
   a[data-toggle="collapse"] {
     position: relative;
   }
+
+  .so_admin_home a[aria-expanded="true"] {
+    color: #000;
+    background: transparent;
+  }
+
   .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -472,7 +478,7 @@ a.logo {
     margin-bottom: 7%;
   }
   .mg-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .banner-img {
     height: 200px;
@@ -538,6 +544,47 @@ a.logo {
   .resp-profile-pad {
     padding: 20px;
   }
+
+  /*============ Card CSS ===========*/
+  .custom-card-tools {
+    width: 324px;
+    height: 100%;
+    border: none;
+    margin: 0 auto;
+    box-shadow: 0px 2px 3px #ccc;
+  }
+  .img-div-tools {
+    height: 533px;
+    width: 733px;
+    background: #e1b599;
+    background-image: url(../img/main_content/16.jpg);
+    background-position: center bottom;
+    background-size: 325px 233px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: -63%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    margin-top: -300px;
+  }
+  .course_card_title {
+    font-size: 20px;
+    height: 51px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    color: #4F5352;
+    line-height: 26px;
+    white-space: normal;
+    text-align: center;
+    padding: 0;
+  }
+  .card-text {
+    color: #4F5352;
+    padding: 0;
+  }
+
+
   /*======== Responsive Side Navigation ========*/
   #resp-sidebar {
     width: 250px;
@@ -690,8 +737,53 @@ a.logo {
     font-size: 17px;
     color: #000;
     cursor: pointer;
-    display: block;
+    display: inline-block;
   }
+
+  /* ========= SO Admin Home page ==========*/
+.so_admin_home .panel
+{
+    background: #F7F7F7;
+    border: none;
+    box-shadow: none;
+}
+.so_admin_home > .panel > .panel-collapse > .panel-body
+{
+  border-top:none !important;
+}
+.so_admin_home .panel-heading h3 a span
+{
+  padding: 0;
+  background:#f7f7f7;
+  font-size: 18px;
+  font-weight: normal;
+  color: #09b47d;
+}
+.so_admin_home .panel-title > a {
+  display: block;
+    /* padding: 0.4em 0.6em; */
+    outline: none;
+    font-weight:600;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.so_admin_home a[aria-expanded="true"]
+{
+  color:#000;
+  background: transparent;
+}
+
+.so_admin_home .panel-title > a.accordion-toggle::before, .so_admin_home a[data-toggle="collapse"]::before  {
+    content:"LESS  \e113";
+    float: right;
+    font-family: 'Glyphicons Halflings',Roboto;
+    margin-right :1em;
+}
+.so_admin_home .panel-title > a.accordion-toggle.collapsed::before, .so_admin_home a.collapsed[data-toggle="collapse"]::before  {
+    content:"MORE \e114";
+}
   /*============ Notification Settings CSS ===========*/
   .notify-panel-pad {
     padding: 20px 30px;
@@ -876,7 +968,7 @@ a.logo {
     margin-top: 15px;
   }
   .mg-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .custom-card {
     width: 300px;
@@ -1110,8 +1202,69 @@ a.logo {
     font-size: 17px;
     color: #000;
     cursor: pointer;
-    display: block;
+    display: inline-block;
   }
+
+
+  /*============ Card CSS ============*/
+  .custom-card-tools {
+    width: 280px;
+    height: 100%;
+    border: none;
+    margin: 0 auto;
+    box-shadow: 0px 2px 3px #ccc;
+  }
+  .img-div-tools {
+    height: 533px;
+    width: 694px;
+    background: #e1b599;
+    background-image: url(../img/main_content/16.jpg);
+    background-position: center bottom;
+    background-size: 325px 233px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: -72%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    margin-top: -300px;
+  }
+  .course_status_text {
+    padding: 3px 11px;
+    background: white;
+    border-radius: 21px;
+    font-size: 14px;
+    color: #4F5352;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0px 76px;
+    height: 25px;
+    text-align: center;
+  }
+  .course_card_title {
+    font-size: 20px;
+    height: 51px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    color: #4F5352;
+    line-height: 26px;
+    white-space: normal;
+    text-align: center;
+    padding: 0;
+  }
+  .card-text {
+    color: #4F5352;
+    padding: 0;
+  }
+  .no_of_courses {
+    color: #0ab47d;
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+    padding: 0;
+  }
+
+
   /*============ Notification Settings CSS ===========*/
   .notify-panel-pad {
     padding: 20px 30px;
@@ -1155,6 +1308,50 @@ a.logo {
     transition: all 0.5s ease-out;
     margin: auto;
   }
+  /* ========= SO Admin Home page ==========*/
+.so_admin_home .panel
+{
+    background: #F7F7F7;
+    border: none;
+    box-shadow: none;
+}
+.so_admin_home > .panel > .panel-collapse > .panel-body
+{
+  border-top:none !important;
+}
+.so_admin_home .panel-heading h3 a span
+{
+  padding: 0;
+  background:#f7f7f7;
+  font-size: 16px;
+  font-weight: normal;
+  color: #09b47d;
+}
+.so_admin_home .panel-title > a {
+  display: block;
+    /* padding: 0.4em 0.6em; */
+    outline: none;
+    font-weight:600;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.so_admin_home a[aria-expanded="true"]
+{
+  color:#000;
+  background: transparent;
+}
+
+.so_admin_home .panel-title > a.accordion-toggle::before, .so_admin_home a[data-toggle="collapse"]::before  {
+    content:"LESS  \e113";
+    float: right;
+    font-family: 'Glyphicons Halflings',Roboto;
+    margin-right :1em;
+}
+.so_admin_home .panel-title > a.accordion-toggle.collapsed::before, .so_admin_home a.collapsed[data-toggle="collapse"]::before  {
+    content:"MORE \e114";
+}
   /* ============ Footer CSS ============*/
   .xs-earth {
     height: 15px;

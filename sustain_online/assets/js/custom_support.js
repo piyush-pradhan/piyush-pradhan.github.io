@@ -35,7 +35,7 @@ $(document).ready(function() {
                       autoplayTimeout: 3500,
                   },
                   600: {
-                      items: 3,
+                      items: 2,
                       nav: false
                   },
                   1000: {
@@ -46,6 +46,37 @@ $(document).ready(function() {
                   }
               }
           })
+
+
+          $('.owl-carousel-3').owlCarousel({
+              loop: true,
+              margin: 10,
+              responsiveClass: true,
+              autoWidth:true,
+              responsive: {
+                  0: {
+                      items: 1,
+                      nav: false,
+                      autoplay: true,
+                      autoplayTimeout: 3500,
+                      margin:35
+                  },
+                  600: {
+                      items: 1,
+                      nav: true,
+                      margin:20
+                  },
+                  1000: {
+                      items: 3,
+                      nav: true,
+                      loop: false,
+                      margin: 36,
+
+                  }
+              }
+          })
+
+
 
            $('[data-toggle="popover"]').popover();
 

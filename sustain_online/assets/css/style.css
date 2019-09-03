@@ -653,6 +653,11 @@ h6 {
   background-color: #ed5565;
 }
 
+.bg-white
+{
+background-color: #fff;
+}
+
 
 /*Theme Buttons*/
 
@@ -771,7 +776,9 @@ hr {
 .label-so-2 {
   background: #6469d1;
   color: #fff;
-  font-size: 10px;
+  font-size: 8px;
+  margin-left: 5px;
+  padding: 1px 3px;
 }
 
 .bg-theme {
@@ -1072,7 +1079,7 @@ ul.sidebar-menu li a.active i {
   margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   padding-top: 0px;
   width: 100%;
 }
@@ -2794,6 +2801,11 @@ label {
 }
 
 /* Custom CSS*/
+
+.so-top-border
+{
+  border-top: 4px solid #6469d2;
+}
 .see-all-anchor {
   color: #555;
   font-weight: bold;
@@ -2863,6 +2875,45 @@ label {
   background-image: none;
 }
 
+
+/* ========= SO Admin Home page ==========*/
+.so_admin_home .panel
+{
+    background: #F7F7F7;
+    border: none;
+    box-shadow: none;
+}
+.so_admin_home > .panel > .panel-collapse > .panel-body
+{
+  border-top:none !important;
+}
+.so_admin_home .panel-heading h3 a span
+{
+  padding: 0;
+  background:#f7f7f7;
+  font-size: 18px;
+  font-weight: normal;
+  color: #09b47d;
+}
+.so_admin_home .panel-title > a {
+  display: block;
+    /* padding: 0.4em 0.6em; */
+    outline: none;
+    font-weight:600;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.so_admin_home .panel-title > a.accordion-toggle::before, .so_admin_home a[data-toggle="collapse"]::before  {
+    content:"LESS  \e113";
+    float: right;
+    font-family: 'Glyphicons Halflings',Roboto;
+    margin-right :1em;
+}
+.so_admin_home .panel-title > a.accordion-toggle.collapsed::before, .so_admin_home a.collapsed[data-toggle="collapse"]::before  {
+    content:"MORE \e114";
+}
 /* ========= Academy Page CSS ============*/
 .banner_img img {
   border-bottom-left-radius: 250% 180px;
@@ -2878,7 +2929,7 @@ label {
   left: 1.1vw;
   border-bottom-left-radius: 250% 180px;
   border-bottom-right-radius: 250% 180px;
-  padding: 2% 15%;
+  padding: 2% 8%;
 }
 .custom-card {
   width: 340px;
@@ -2937,9 +2988,11 @@ a.card_anchor {
   line-height: 26px;
   white-space: normal;
   text-align: center;
+  padding: 0;
 }
 .card-text {
   color: #4F5352;
+  padding: 0;
 }
 .no_of_courses {
   color: #0ab47d;
@@ -2947,7 +3000,22 @@ a.card_anchor {
   float: left;
   font-weight: bold;
 }
-
+.floating-ribbon-first
+{
+  position: absolute;
+  z-index: 9999;
+  left: -3px;
+  width: 100px;
+  top: 2em;
+}
+.floating-ribbon-rest
+{
+  position: absolute;
+  z-index: 9999;
+  left: -2px;
+  width: 100px;
+  top: 2em;
+}
 /*============ Tools page CSS ============*/
 .tools-content {
   padding: 0 8%;
@@ -3483,8 +3551,12 @@ p.separator span {
 {
     font-size: 18px;
     color: #000;
-    cursor:pointer;
-    display:block;
+    cursor: pointer;
+    display: inline-block;
+    background: #fff;
+    border: 0px;
+    box-shadow: none;
+    border-color: #fff;
 }
 
 .dot-drop-btn:hover
@@ -3688,8 +3760,12 @@ p.brand-separator:before {
     font-size: 21px;
     color: #000;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     margin: 15% 0;
+    border: none;
+    background: transparent;
+    outline:none;
+    outline-color: none;
 }
 
 .notification-panel-pad .myproject-drop-down {
