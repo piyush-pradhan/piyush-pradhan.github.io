@@ -225,5 +225,21 @@ $(document).ready(function() {
 
         }
       });
+      $("#manager").click(function () {
+              if ($(this).is(":checked")) {
+                  $(".manager-content").removeClass('hidden');
+              } else {
+                  $(".manager-content").addClass('hidden');
+              }
+          });
+          $("#administrator").click(function () {
+              if ($(this).is(":checked")) {
+                  $(".admin-content").removeClass('hidden');
+              } else {
+                  $(".admin-content").addClass('hidden');
+              }
+          });
+
+
       });
 

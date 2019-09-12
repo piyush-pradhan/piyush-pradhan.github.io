@@ -469,95 +469,134 @@
       <section id="main-content">
         <section class="wrapper container">
           <div class="row mt">
-            <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 pad-zero">
-              <h3 class="mt-0 col-light">Invite Users</h3>
+            <div class="col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 pad-zero">
+              <h3 class="mt-0 col-light">Pending invitations</h3>
             </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <button class="btn btn-so-hollow">Invite new users</button>
+            </div>
+
           </div>
           <!-- /row mt -->
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-30">
-              <h4 class="mt-30 col-so">Available licences: 44</h4>
-              <h5 class="mt-30 pad-zero fw100">Enter email address and press the space bar or enter key.</h5>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-10 pending-user">
+              <h6 class="separator pad-zero fw400">Search for invitations</h6>
+              <h5 class="mt-30 pad-zero fw100">When performing a search, all users matching the search term are shown.</h5>
+              <h5 class="pad-zero fw100">If you want to list all the pending invitations, leave the search field empty.</h5>
               <div class="row">
-                <div class="col-sm-8 mt-10">
+                <div class="col-sm-6 mt-10">
                   <fieldset class="so-border" style="margin-bottom: 0 !important">
-                    <legend class="so-border">Enter email address(es)</legend>
+                    <legend class="so-border">Search for users</legend>
                     <div class="control-group">
                       <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
                       <div class="controls">
-                        <input type="email" class="so_input_text" id="" name="" placeholder="">
+                        <input type="text" class="so_input_text" id="" name="" placeholder="">
                       </div>
                     </div>
                   </fieldset>
-                  <p class="small mt-0">If you want to invite multiple user at the same time, use comma to separate the addresses.</p>
+
+                </div>
+                <div class="row col-sm-6 mt-25">
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-so-filled">
+                      Search
+                    </button>
+                  </div>
+                  <!-- <div class="col-sm-3">
+                    <button class="btn btn-lg btn-so-hollow">
+                      Reset
+                    </button>
+                  </div> -->
                 </div>
               </div>
               <div class="row mt-20">
-                <div class="col-sm-12">
-                  <h5 class="pad-zero fw100">By default these users will be joining as normal users, with no access to Admin Portal.</h5>
+                <div class="col-sm-6">
+                  <h5 class="pad-zero fw100">Total 6 users have not yet acepted the invitations.</h5>
                 </div>
-                <div class="col-sm-12">
-                  <h5 class="pad-zero fw100">If you want to assign specific roles to the users, please select from the list below: </h5>
+                <div class="col-sm-4">
+                  <button class="btn btn-sm btn-so-filled pull-right">
+                      Send reminder(s)
+                    </button>
                 </div>
-                <div class="col-sm-12">
-                  <br/>
-                  <div class="col-sm-12 pad-zero">
-                    <label class="radio mt-35">Manager
-                    <input type="checkbox" id="manager" name="user_type">
-                    <span class="checkround"></span>
-                    </label>
-                    <div class="manager-content col-sm-6 hidden">
-                        <p>Manager will be able to view all members and course statistic of their groups, but they have limited access to admin portal, for example they cannot invite, modify or delete users.</p>
-                        <div class="col-sm-12 mt-20 mb-20">
-                        <label class="radio">The Office that the person belongs to
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        <br/>
-                        <label class="radio">All users
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        </div>
-                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
-                    </div>
-                  </div>
-                  <br/>
-                  <div class="col-sm-12 pad-zero">
-                    <label class="radio mt-35">Administrator
-                    <input type="checkbox" id="administrator" name="user_type">
-                    <span class="checkround"></span>
-                  </label>
-                  <div class="admin-content col-sm-6 hidden">
-                        <p>Administrator will be able to access all settings and functionality the administrator portal, except for Account setting which is only available to SuperAdmin</p>
-                        <div class="col-sm-12 mt-20 mb-20">
-                        <label class="radio">The Office that the person belongs to
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        <br/>
-                        <label class="radio">All users
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        </div>
-                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
-                    </div>
-                  </div>
+                <div class="col-sm-10">
+                  <div class="table-responsive">
+                    <table class="table view-modify-user-table">
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectall" type="checkbox">
+                                <label for="selectall"></label>
+                            </div>
+                          </th>
+                          <th>Email</th>
+                          <th>Invitation sent</th>
+                          <th>Latest reminder sent</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectone" type="checkbox">
+                                <label for="selectone"></label>
+                            </div>
+                          </td>
+                          <td>piyush@yagnitech.com</td>
+                          <td>Sept 10 2019</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectone" type="checkbox">
+                                <label for="selectone"></label>
+                            </div>
+                          </td>
+                          <td>piyush@yagnitech.com</td>
+                          <td>Sept 10 2019</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectone" type="checkbox">
+                                <label for="selectone"></label>
+                            </div>
+                          </td>
+                          <td>piyush@yagnitech.com</td>
+                          <td>Sept 10 2019</td>
+                          <td>Sept 21 2019</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                    <hr/>
+                </div>
                 </div>
               </div>
 
-              <div class="row mt-30">
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                  <button class="btn btn-so-filled">Send Invitation</button>
+              <div class="row mt-10">
+
+                <div class="col-sm-4"></div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                  <ul class="pagination pagination-sm">
+                    <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                  </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                  <button class="btn btn-so-hollow">Cancel</button>
-                </div>
+
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-30">
               <h5><span><i class="fa fa-exclamation-circle mr-15 col-so"></i></span>Need a little assistance? We have a couple of helpful information for you!</h5>
               <ul style="list-style: disc !important;">
@@ -572,7 +611,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
 
           <!-- Footer Section Starts -->
           <!-- SM/MD/LG footer Starts -->
@@ -749,5 +788,38 @@
     <script src="assets/js/common-scripts.js"></script>
     <script src="assets/js/custom_support.js"></script>
     <script src="assets/js/scrollToTop.js"></script>
+    <!-- Delete All Users -->
+    <div id="deletealluser" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center">Confirm user deletion</h4>
+            <p class="text-center mt-20 pad-zero">You are about to delete XX users. The deletion will permanently erase all the personal and course progress data of these users. Deleting a user will not free the seat for the new user to sign up, so if you have run out of licenses - instead of deletion, get some more license <a href="#" class="col-so">here</a></p>
+            <div class="row">
+              <div class="col-sm-12 display-flex">
+                <label class="checkbox-inline mlr-auto"><input type="checkbox" value="">Confirm before deletion</label>
+              </div>
+            </div>
+            <div class="row mt-20">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4 display-flex">
+                <button class="btn btn-so-filled mlr-auto">Proceed</button>
+              </div>
+              <div class="col-sm-4"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>

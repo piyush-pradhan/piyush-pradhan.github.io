@@ -14,6 +14,7 @@
     <link rel="manifest" href="assets/img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Yantramanav&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
@@ -51,10 +52,11 @@
 
         <!--logo start-->
         <div class="hidden-xs">
-          <a href="index.html" class="logo">SustainOnline</a>
+          <a href="index.html" class="logo"><img src="assets/img/so_logo.png" class="img-responsive" alt=""></a>
         </div>
         <div class="col-xs-9 hidden-sm hidden-md hidden-lg">
-          <h1 class="text-center fw900 fz-40 mb-0 mt-5 ml-25"><a class="col-light" href="index.html">SO</a></h1>
+          <!-- <h1 class="text-center fw900 fz-40 mb-0 mt-5 ml-25"><a class="col-light" href="index.html">SO</a></h1> -->
+          <a href="index.html" class="logo"><img src="assets/img/so_logo.png" class="img-responsive" alt=""></a>
         </div>
         <!--logo end-->
 
@@ -89,12 +91,12 @@
           <!--  notification start -->
           <ul class="nav top-menu">
             <!-- settings start -->
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
               <i class="fa fa-trophy"></i>
               <span class="badge bg-theme">4</span>
               </a>
-              <!-- <ul class="dropdown-menu extended tasks-bar">
+              <ul class="dropdown-menu extended tasks-bar">
                 <div class="notify-arrow notify-arrow-green"></div>
                 <li>
 
@@ -114,11 +116,11 @@
                 <li class="external">
 
                 </li>
-                </ul> -->
-            </li>
+                </ul>
+            </li> -->
             <!-- settings end -->
             <!-- inbox dropdown start-->
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
               <i class="fa fa-bell"></i>
               <span class="badge bg-theme">5</span>
@@ -200,8 +202,20 @@
                   <a href="index.html#" class="text-center"><b>See all</b></a>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <!-- inbox dropdown end -->
+            <!-- city selector Starts -->
+             <li class="top-nav-city-sel mr-20">
+              <div class="form-group custom-select">
+                    <img src="assets/img/world_footer.png" class="img-responsive sm-earth" height="15" width="15" alt="">
+                    <select class="form-control left" id="sel1">
+                      <option>English</option>
+                      <option>German</option>
+                      <option>Japanese</option>
+                    </select>
+              </div>
+             </li>
+            <!-- city selector ends -->
             <!-- profile start -->
             <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
@@ -219,7 +233,7 @@
                     <a href="my_projects.html">My Projects</a>
                 </li>
                 <li>
-                    <a href="">Sign Out</a>
+                    <a href="">Logout</a>
                 </li>
                 </ul>
             </li>
@@ -278,8 +292,9 @@
             <li class="toggle-content"><a href="#um-dd1" data-toggle="collapse" title="User Management"><i class="fa fa-users icon-menu-pos"></i></a></li>
             <li>
               <div id="um-dd1" class="collapse">
+                <a href="javascript:void(0)" class="pl-10 mt-10" title="View and Modify User"><i class="fa fa-user-edit icon-menu-pos fz-20"></i></a>
                 <a href="invite_user.html" class="pl-10 mt-10" title="Invite User"><i class="fa fa-user-plus icon-menu-pos fz-20"></i></a>
-                <a href="profile.html" class="pl-10 mt-10" title="Edit User"><i class="fa fa-user-edit icon-menu-pos fz-20"></i></a>
+                <a href="pending_invite.html" class="pl-10 mt-10" title="Pending Invitations"><i class="fa fa-mail-bulk icon-menu-pos fz-20"></i></a>
               </div>
             </li>
             <!-- Desktop/iPad icon only menu User Management -->
@@ -293,6 +308,16 @@
               </div>
             </li>
             <!-- Desktop/iPad icon only menu Analytics -->
+            <!-- Desktop/ipad icon only menu Account Settings -->
+              <li class="toggle-content"><a href="#um-dd4" data-toggle="collapse" title="Account Settings"><i class="fa fa-cog icon-menu-pos"></i></a></li>
+            <li>
+              <div id="um-dd4" class="collapse">
+                <a href="javascript:void(0)" class="pl-10 mt-10" title="Invitations"><i class="fa fa-envelope-open icon-menu-pos fz-20"></i></a>
+                <a href="javascript:void(0)" class="pl-10 mt-10" title="Courses Completion"><i class="fa fa-chart-line icon-menu-pos fz-20"></i></a>
+                <a href="javascript:void(0)" class="pl-10 mt-10" title="Project Creation"><i class="fa fa-briefcase icon-menu-pos fz-20"></i></a>
+              </div>
+            </li>
+            <!-- Desktop/ipad icon only menu Account Settings -->
             <!-- Desktop/iPad icon only menu My Progress -->
             <li class="toggle-content"><a href="#um-dd3" data-toggle="collapse" title="My Progress"><i class="fa fa fa-tasks icon-menu-pos"></i></a></li>
             <li>
@@ -318,10 +343,11 @@
               <span>User Management</span>
               </a>
               <div id="um_list" class="panel-collapse collapse in">
-              <div class="panel-body">
-                  <ul>
-                    <li><a href="invite_user.html" class="active">Invite Users</a></li>
-                    <li class="mt-15"><a href="profile.html" class="">Edit Users</a></li>
+              <div class="panel-body pad-zero">
+                  <ul class="pad-zero mt-5">
+                    <li><a href="javascript:void(0)" class="active">View and modify users</a></li>
+                    <li><a href="invite_user.html" class="">Invite Users</a></li>
+                    <li><a href="pending_invite.html" class="">Pending intivations</a></li>
                   </ul>
               </div>
             </div>
@@ -335,16 +361,34 @@
               <span>Analytics</span>
               </a>
               <div id="analytics" class="panel-collapse collapse">
-              <div class="panel-body">
-                  <ul>
+              <div class="panel-body pad-zero">
+                  <ul class="pad-zero mt-5">
                     <li><a href="javascript:void(0)">Invitations</a></li>
-                    <li class="mt-15"><a href="javascript:void(0)">Course Completion</a></li>
-                    <li class="mt-15"><a href="javascript:void(0)">Project Creation</a></li>
+                    <li><a href="javascript:void(0)">Course Completion</a></li>
+                    <li><a href="javascript:void(0)">Project Creation</a></li>
                   </ul>
               </div>
             </div>
             </li>
-            <!-- Desktop/iPad (Hidden, when icon only menu triggered) Analytics -->
+            <!-- Desktop/iPad (Hidden,when icon only menu triggered) Analytics -->
+            <!-- Desktop/iPad (Hidden,when icon only menu triggred) Account Settings -->
+            <li class="">
+              <a class="accordion-toggle" data-toggle="collapse" href="#accountsetting">
+              <span class="fa fa-caret-right col-light pl-0 pr-10 fz-15"></span>
+              <i class="fa fa-cog"></i>
+              <span>Account Settings</span>
+              </a>
+              <div id="accountsetting" class="panel-collapse collapse">
+              <div class="panel-body pad-zero">
+                  <ul class="pad-zero mt-5">
+                    <li><a href="javascript:void(0)">Invitations</a></li>
+                    <li><a href="javascript:void(0)">Course Completion</a></li>
+                    <li><a href="javascript:void(0)">Project Creation</a></li>
+                  </ul>
+              </div>
+            </div>
+            </li>
+            <!-- Desktop/iPad (Hidden,when icon only menu triggred) Account Settings -->
           </ul>
           <ul class="sidebar-menu second" id="nav-accordion">
             <hr/>
@@ -359,12 +403,12 @@
               <span>My Progress</span>
               </a>
               <div id="myprogress" class="panel-collapse collapse">
-              <div class="panel-body">
-                  <ul>
+              <div class="panel-body pad-zero">
+                  <ul class="pad-zero mt-5">
                     <li><a href="">Finished Courses</a></li>
-                    <li class="mt-15"><a href="javascript:void(0)">Courses in Progress</a></li>
-                    <li class="mt-15"><a href="my_projects.html">My Projects</a></li>
-                    <li class="mt-15"><a href="javascript:void(0)">My Insights</a></li>
+                    <li><a href="javascript:void(0)">Courses in Progress</a></li>
+                    <li><a href="my_projects.html">My Projects</a></li>
+                    <li><a href="javascript:void(0)">My Insights</a></li>
                   </ul>
               </div>
             </div>
@@ -469,95 +513,144 @@
       <section id="main-content">
         <section class="wrapper container">
           <div class="row mt">
-            <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 pad-zero">
-              <h3 class="mt-0 col-light">Invite Users</h3>
+            <div class="col-sm-12">
+              <ul class="breadcrumb">
+                <li><a href="javascript:void(0)" class="col-so">Home</a></li>
+                <li><a href="javascript:void(0)" class="col-so">User Management</a></li>
+                <li>View and modify user</li>
+              </ul>
             </div>
+          </div>
+          <div class="row mt">
+            <div class="col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 pad-zero">
+              <h3 class="mt-0 col-light">View and modify users</h3>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <button class="btn btn-so-hollow">Invite new users</button>
+            </div>
+
           </div>
           <!-- /row mt -->
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-30">
-              <h4 class="mt-30 col-so">Available licences: 44</h4>
-              <h5 class="mt-30 pad-zero fw100">Enter email address and press the space bar or enter key.</h5>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-10">
+              <h6 class="separator pad-zero fw400">Search for users</h6>
+              <h5 class="mt-30 pad-zero fw100">When performing a search, all users matching the search term are shown.</h5>
+              <h5 class="pad-zero fw100">If you want to list all the users, leave the search field empty.</h5>
               <div class="row">
-                <div class="col-sm-8 mt-10">
+                <div class="col-sm-6 mt-10">
                   <fieldset class="so-border" style="margin-bottom: 0 !important">
-                    <legend class="so-border">Enter email address(es)</legend>
+                    <legend class="so-border">Search</legend>
                     <div class="control-group">
                       <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
                       <div class="controls">
-                        <input type="email" class="so_input_text" id="" name="" placeholder="">
+                        <input type="text" class="so_input_text" id="" name="" placeholder="">
                       </div>
                     </div>
                   </fieldset>
-                  <p class="small mt-0">If you want to invite multiple user at the same time, use comma to separate the addresses.</p>
+
+                </div>
+                <div class="row col-sm-6 mt-25">
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-so-filled">
+                      Search
+                    </button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-so-hollow">
+                      Reset
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="row mt-20">
                 <div class="col-sm-12">
-                  <h5 class="pad-zero fw100">By default these users will be joining as normal users, with no access to Admin Portal.</h5>
+                  <h5 class="pad-zero fw100">Search has identified 3 users.</h5>
                 </div>
                 <div class="col-sm-12">
-                  <h5 class="pad-zero fw100">If you want to assign specific roles to the users, please select from the list below: </h5>
+                  <div class="table-responsive">
+                    <table class="table view-modify-user-table">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-1">
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectall" type="checkbox">
+                                <label for="selectall"></label>
+                            </div>
+                          </th>
+                          <th class="col-sm-5">Email</th>
+                          <th class="col-sm-2">Firstname</th>
+                          <th class="col-sm-2">Lastname</th>
+                          <th colspan="2" class="col-sm-2"><button class="mlr-auto btn btn-so-hollow btn-xs fw100" data-toggle="modal" data-target="#deletealluser">Delete user(s)</button></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="col-sm-1">
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectone" type="checkbox">
+                                <label for="selectone"></label>
+                            </div>
+                          </td>
+                          <td class="col-sm-5">piyush@yagnitech.com</td>
+                          <td class="col-sm-2">Piyush</td>
+                          <td class="col-sm-2">Pradhan</td>
+                          <td><a href="#viewuser" data-toggle="modal" class="text-right"><i class="fas fa-eye"></i></a></td>
+                          <td class="col-sm-2"><a href="#singleuserdel" data-toggle="modal"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="col-sm-1">
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selecttwo" type="checkbox">
+                                <label for="selecttwo"></label>
+                            </div>
+                          </td>
+                          <td class="col-sm-5">piyush@yagnitech.com</td>
+                          <td class="col-sm-2">Piyush</td>
+                          <td class="col-sm-2">Pradhan</td>
+                          <td><a href="#" class="text-right"><i class="fas fa-eye"></i></a></td>
+                          <td class="col-sm-2"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="col-sm-1">
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="selectthree" type="checkbox">
+                                <label for="selectthree"></label>
+                            </div>
+                          </td>
+                          <td class="col-sm-5">piyush@yagnitech.com</td>
+                          <td class="col-sm-2">Piyush</td>
+                          <td class="col-sm-2">Pradhan</td>
+                          <td><a href="#" class="text-right"><i class="fas fa-eye"></i></a></td>
+                          <td class="col-sm-2"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                    <hr/>
                 </div>
-                <div class="col-sm-12">
-                  <br/>
-                  <div class="col-sm-12 pad-zero">
-                    <label class="radio mt-35">Manager
-                    <input type="checkbox" id="manager" name="user_type">
-                    <span class="checkround"></span>
-                    </label>
-                    <div class="manager-content col-sm-6 hidden">
-                        <p>Manager will be able to view all members and course statistic of their groups, but they have limited access to admin portal, for example they cannot invite, modify or delete users.</p>
-                        <div class="col-sm-12 mt-20 mb-20">
-                        <label class="radio">The Office that the person belongs to
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        <br/>
-                        <label class="radio">All users
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        </div>
-                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
-                    </div>
-                  </div>
-                  <br/>
-                  <div class="col-sm-12 pad-zero">
-                    <label class="radio mt-35">Administrator
-                    <input type="checkbox" id="administrator" name="user_type">
-                    <span class="checkround"></span>
-                  </label>
-                  <div class="admin-content col-sm-6 hidden">
-                        <p>Administrator will be able to access all settings and functionality the administrator portal, except for Account setting which is only available to SuperAdmin</p>
-                        <div class="col-sm-12 mt-20 mb-20">
-                        <label class="radio">The Office that the person belongs to
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        <br/>
-                        <label class="radio">All users
-                        <input type="radio" name="user_type">
-                        <span class="checkround"></span>
-                        </label>
-                        </div>
-                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
-              <div class="row mt-30">
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                  <button class="btn btn-so-filled">Send Invitation</button>
+              <div class="row mt-10">
+
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  <ul class="pagination pagination-sm pull-right">
+                    <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                  </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                  <button class="btn btn-so-hollow">Cancel</button>
-                </div>
+
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 panel notify-panel-pad mt-30">
               <h5><span><i class="fa fa-exclamation-circle mr-15 col-so"></i></span>Need a little assistance? We have a couple of helpful information for you!</h5>
               <ul style="list-style: disc !important;">
@@ -572,7 +665,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
 
           <!-- Footer Section Starts -->
           <!-- SM/MD/LG footer Starts -->
@@ -681,62 +774,6 @@
         </section>
       </section>
       <!-- MAIN CONTENT ENDS -->
-      <!-- FOOTER STARTS -->
-      <!-- Notification Box Modal -->
-      <div id="notification-box" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Notifications</h4>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="col-xs-2 mob-notify">
-                    <i class="fa fa-bell"></i>
-                  </div>
-                  <div class="col-xs-9">
-                    <h5>Some notification example</h5>
-                    <p class="pad-zero">5 hours</p>
-                  </div>
-                  <div class="col-xs-1 mob-notify pad-zero"><i class="fa fa-ellipsis-v"></i></div>
-                </div>
-              </div>
-              <div class="row">
-                <hr/>
-                <div class="col-xs-12">
-                  <div class="col-xs-2 mob-notify">
-                    <i class="fa fa-bell"></i>
-                  </div>
-                  <div class="col-xs-9">
-                    <h5>Some notification example</h5>
-                    <p class="pad-zero">5 hours</p>
-                  </div>
-                  <div class="col-xs-1 mob-notify pad-zero"><i class="fa fa-ellipsis-v"></i></div>
-                </div>
-              </div>
-              <div class="row">
-                <hr/>
-                <div class="col-xs-12">
-                  <div class="col-xs-2 mob-notify">
-                    <i class="fa fa-bell"></i>
-                  </div>
-                  <div class="col-xs-9">
-                    <h5>Some notification example</h5>
-                    <p class="pad-zero">5 hours</p>
-                  </div>
-                  <div class="col-xs-1 mob-notify pad-zero"><i class="fa fa-ellipsis-v"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- ***************************************** Scripts ************************************** -->
     <script src="assets/js/jquery.js"></script>
@@ -749,5 +786,302 @@
     <script src="assets/js/common-scripts.js"></script>
     <script src="assets/js/custom_support.js"></script>
     <script src="assets/js/scrollToTop.js"></script>
+
+    <!-- View User modal starts -->
+    <div id="viewuser" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #F8F8F8">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="row mt-30">
+              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 pr-0 display-flex">
+                  <img src="assets/img/ui-zac.jpg" class="img-responsive img-circle profile-pic mlr-auto" alt="">
+              </div>
+              <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                <h4>Sofia Johnsson</h4>
+                <p class="pad-zero">sofia@sustainonline.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- Tab Navigation -->
+            <div class="row">
+            <div class="">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Information</a></li>
+
+              <li role="presentation"><a href="#preference" aria-controls="preference" role="tab" data-toggle="tab">Analytics</a></li>
+
+              <li role="presentation"><a href="#insights" aria-controls="insights" role="tab" data-toggle="tab">Course Completion</a></li>
+
+
+            </ul>
+            </div>
+          </div>
+          <!-- Tab Navigation -->
+          <!-- Tab Content -->
+            <div class="row resp-profile-pad">
+          <div class="col-md-12 col-lg-12 panel">
+            <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="profile">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                    <fieldset class="so-border">
+                  <legend class="so-border">First name</legend>
+                  <div class="control-group">
+                      <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
+                      <div class="controls">
+                          <input type="text" class="so_input_text" id="" name="" placeholder="">
+                      </div>
+                  </div>
+              </fieldset>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                    <fieldset class="so-border">
+                  <legend class="so-border">Last name</legend>
+                  <div class="control-group">
+                      <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
+                      <div class="controls">
+                          <input type="text" class="so_input_text" id="" name="" placeholder="">
+                      </div>
+                  </div>
+              </fieldset>
+                </div>
+                <div class="col-md-4 hidden-sm"></div>
+            </div>
+            <div class="row mt-30">
+              <div class="col-sm-12 col-md-12">
+              <p class="separator">Profession</p>
+              </div>
+              <div class="col-sm-12">
+                <div class="row mt-30">
+                  <div class="col-sm-6 col-md-6 col-lg-5">
+                      <fieldset class="so-border">
+                  <legend class="so-border">Job Title</legend>
+                  <div class="control-group">
+                      <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
+                      <div class="controls">
+                          <input type="text" class="so_input_text" id="" name="" placeholder="">
+                      </div>
+                  </div>
+              </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-30">
+              <div class="col-sm-12">
+              <p class="separator">Contact</p>
+              </div>
+              <div class="col-sm-12">
+                <div class="row mt-30">
+                  <div class="col-sm-6 col-md-6 col-lg-5">
+                    <p class="fz-15">Email</p>
+                    <p class="fz-15">sofia@suntainonline.com</p>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-5">
+                    <fieldset class="mb-0 so-border">
+                      <legend class="so-border">Phone</legend>
+                      <div class="control-group">
+                          <!-- <label class="control-label input-label" for="startTime">Start :</label> -->
+                          <div class="controls">
+                              <input type="number" class="so_input_text" id="" name="" placeholder="">
+                          </div>
+                      </div>
+                    </fieldset>
+                    <p>Please use international format</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-30">
+              <div class="col-sm-12">
+              <p class="separator">Role</p>
+              </div>
+              <div class="col-sm-12">
+                <p>Assign specific to this user by clickin the button below.</p>
+              </div>
+              <div class="col-sm-12 pl-25">
+                  <br/>
+                  <div class="col-sm-12 pad-zero">
+                    <label class="radio mt-35">Manager
+                    <input type="checkbox" id="manager" name="user_type">
+                    <span class="checkround"></span>
+                    </label>
+                    <div class="manager-content col-sm-6 hidden">
+                        <p>Manager will be able to view all members and course statistic of their groups, but they have limited access to admin portal, for example they cannot invite, modify or delete users.</p>
+                        <div class="col-sm-12 mt-20 mb-20">
+                        <label class="radio">The Office that the person belongs to
+                        <input type="radio" name="user_type">
+                        <span class="checkround"></span>
+                        </label>
+                        <br/>
+                        <label class="radio">All users
+                        <input type="radio" name="user_type">
+                        <span class="checkround"></span>
+                        </label>
+                        </div>
+                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="col-sm-12 pad-zero">
+                    <label class="radio mt-35">Administrator
+                    <input type="checkbox" id="administrator" name="user_type">
+                    <span class="checkround"></span>
+                  </label>
+                  <div class="admin-content col-sm-6 hidden">
+                        <p>Administrator will be able to access all settings and functionality the administrator portal, except for Account setting which is only available to SuperAdmin</p>
+                        <div class="col-sm-12 mt-20 mb-20">
+                        <label class="radio">The Office that the person belongs to
+                        <input type="radio" name="user_type">
+                        <span class="checkround"></span>
+                        </label>
+                        <br/>
+                        <label class="radio">All users
+                        <input type="radio" name="user_type">
+                        <span class="checkround"></span>
+                        </label>
+                        </div>
+                        <p>All email addresses entered above will recieve this role. Send separate invitations to create group with different roles.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+             <div class="row mt-15">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-lg-1">
+                    <button class="btn btn-so-hollow" data-dismiss="modal">Cancle</button>
+                </div>
+                <div class="col-xs-4 col-sm-2 col-md-2 col-lg-1">
+                  <button class="btn btn-so-filled">Save and Close</button>
+                </div>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="preference">
+            Coming Soon
+          </div>
+          <div role="tabpanel" class="tab-pane" id="insights">
+            Coming Soon
+          </div>
+          </div>
+          </div>
+          </div>
+          <!-- Tab Content -->
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+    <!-- View User modal ends -->
+    <!-- Delete All Users modal start -->
+    <div id="deletealluser" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center">Confirm user deletion</h4>
+            <p class="text-center mt-30 pad-zero">
+              You are about to delete the following users:
+            </p>
+            <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+            <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+            <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+            <a href="#deluserlist" data-toggle="modal" class="text-center col-so display-block">Show all 6 users >></a>
+            <p class="text-center mt-20 pad-zero">Once deleted, the personal data and course progress data of these users <strong>cannot be recovered.</strong> Please note that deleting a user will not free the seat for a new user to sign up, so if you have run out of licenses - instead of deletion, get some more licenses<a href="#" class="col-so"> here.</a></p>
+            <div class="row">
+              <div class="col-sm-12 display-flex mt-20">
+                <div class="checkbox checkbox-info checkbox-circle mlr-auto">
+                  <input id="confirmdelete" type="checkbox">
+                  <label for="confirmdelete" class="col-222">&nbsp; I understand this and I want to proceed with deletion.</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-20">
+              <div class="col-sm-6">
+                <button class="btn btn-danger  pull-right">Delete</button>
+              </div>
+              <div class="col-sm-6">
+                <button class="btn  btn-so-hollow" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Delete All User modal ends -->
+    <!-- Delete All User List modal starts -->
+      <div id="deluserlist" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h4 class="text-center">Confirm user deletion</h4>
+              <p class="text-center mt-30 pad-zero">
+                You are about to delete the following users:
+              </p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <p class="text-center pad-zero m-0">piyush@yagnitech.com</p>
+              <a href="javascript:void(0)" data-dismiss="modal" class="text-center col-so display-block mt-15"><< Return to previous view.</a>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Delete All User List modal ends -->
+    <!-- Delete Single User modal starts -->
+    <div class="modal fade" id="singleuserdel" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center large pad-zero">Do you want to delete this user?</h4>
+            <div class="row mt-20">
+              <div class="col-sm-6"><button class="btn btn-so-filled pull-right">Yes</button></div>
+              <div class="col-sm-6"><button class="btn btn-so-hollow" data-dismiss="modal">No</button></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delete Single User modal ends -->
   </body>
 </html>
