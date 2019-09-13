@@ -3154,10 +3154,20 @@ label {
 
 
 /*======== Orginization Structure ========*/
-.org-struct-select
+.org-struct-select select
 {
   border: none;
-  box-shadow: none;
+  background: #fff;
+  box-shadow: none !important;
+  width: 100%;
+  outline: 0;
+  float: right;
+  margin-top: 0;
+  padding: 0 22px 0 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/sort-down.png) 98% / 4% no-repeat #fff;
 }
 /* Custom CSS*/
 
