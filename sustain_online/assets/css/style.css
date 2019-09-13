@@ -618,6 +618,10 @@ p
 {
   display:flex;
 }
+.breadcrumb
+{
+  background: transparent !important
+}
 
 .text-italic {
   font-style: italic;
@@ -1179,6 +1183,47 @@ ul.sidebar-menu li a.active i {
   font-size: 11px;
 }
 
+
+/*======== Action Alert Notification top bar css starts ========*/
+
+.so-bg
+{
+  background-color: #0ab47d;
+}
+.notify-stripe
+{
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+  -webkit-animation: hidenotify 5s; /* Safari 4.0 - 8.0 */
+  animation: hidenotify 5s;
+  top: -6em;
+}
+
+@keyframes hidenotify {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -6em;
+    }
+}
+
+@keyframes shownotify {
+    0% {
+        top: -6em;
+    }
+    100% {
+        top: 0em;
+    }
+}
+
+
+
+
+/*======== Action alert notification top bar css ends ========>
 
 /* MAIN CONTENT CONFIGURATION */
 
@@ -1945,6 +1990,11 @@ PANELS CONFIGURATIONS
 
 /*STOCK CARD Panel*/
 
+.card-shadow
+{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
 .card {
   background: white;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -2608,6 +2658,8 @@ label {
   border-color: #41cac0;
 }
 
+
+
 /*LOGIN CONFIGURATION PAGE*/
 .form-login {
   max-width: 330px;
@@ -2870,7 +2922,7 @@ label {
 /*footer*/
 
 
-/*======== Login / Signup page Footer ========*/
+/*======== Login page Footer ========*/
 .login-pg-footer
 {
   position: absolute;
@@ -2980,6 +3032,62 @@ label {
   background-color: #0ab47d; */
   color: #0ab47d;
 }
+
+/*======== Forgot Pass page ========*/
+
+.forgot-pass-pg-footer
+{
+  position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
+.forgot-pass-pg-footer
+{
+  background-color:#efefef !important;
+}
+.forgot-pass-pg-footer a
+{
+  color:#222;
+  font-weight:600;
+}
+
+.forgot-pass-pg-footer select
+{
+  border:none;
+  background:#efefef;
+  box-shadow:none !important;
+  width:70%;
+  outline:0;
+  float:right;
+}
+.forgot-pass-pg-footer select:focus
+{
+  border:none;
+  background:#efefef;
+  box-shadow:none !important;
+  width:70%;
+  outline:0;
+  float:right;
+}
+
+.forgot-pass-pg-footer img
+{
+  position: relative;
+  top: 23px;
+  right: 0px;
+  left: 40px;
+}
+
+.forgot-pass-pg-footer img.copyright {
+    position: relative;
+    top: 0;
+    right: 0px;
+    left: 0;
+}
+
+
+
 .go-top {
   margin-right: 1%;
   float: none;
@@ -3044,6 +3152,13 @@ label {
     left: 0;
 }
 
+
+/*======== Orginization Structure ========*/
+.org-struct-select
+{
+  border: none;
+  box-shadow: none;
+}
 /* Custom CSS*/
 
 .so-top-border
@@ -3177,7 +3292,7 @@ label {
   left: 1.1vw;
   border-bottom-left-radius: 250% 180px;
   border-bottom-right-radius: 250% 180px;
-  padding: 2% 8%;
+  padding: 2% 2.5%;
 }
 .flex-container
 {
