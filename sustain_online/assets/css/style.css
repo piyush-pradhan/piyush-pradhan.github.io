@@ -1197,9 +1197,11 @@ ul.sidebar-menu li a.active i {
   position: absolute;
   width: 100%;
   z-index: 8;
-  -webkit-animation: hidenotify 5s; /* Safari 4.0 - 8.0 */
-  animation: hidenotify 5s;
+   -webkit-animation: shownotify 5s; /* Safari 4.0 - 8.0 */
+  animation: shownotify 5s;
   top: -6em;
+  height: 50px;
+  padding: 15px;
 }
 
 @keyframes hidenotify {
