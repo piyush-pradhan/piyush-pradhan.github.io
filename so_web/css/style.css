@@ -62,7 +62,11 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+.fz-36
+{
+	font-size: 36px;
+	font-weight: bold;
+}
 .text-justify
 {
  text-align: justify;
@@ -93,6 +97,14 @@ ul {
 	color: #342d57;
 }
 
+a.col-pink:hover
+{
+	color: #000;
+}
+.border-top
+{
+	border-top: 2px solid #342d57 !important;
+}
 
 .card-shadow
 {
@@ -271,6 +283,24 @@ ul {
 {
 	color: #fff;
 	background: #342d57;
+}
+
+.btn-white-hollow-small
+{
+	border: 2px solid #fff;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 12px;
+    background: transparent;
+    /* box-shadow: 0 0px 45px rgba(0, 0, 0, .2); */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 /* top header */
 
@@ -453,9 +483,22 @@ nav a {
     text-transform: capitalize;
     font-size: 14px;
     letter-spacing: 1px;
-	padding: 10px 10px;
+	padding: 0px 15px;
+}
+.dropdown-menu{
+z-index: 9999;
+border-radius: 0;
+top:12px !important;
 }
 
+/* .dropdown-menu::before{
+	content: "";
+	position: relative;
+	bottom: 38px;
+	left: 8%;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+} */
 
 nav ul li ul li:hover { background: #f8f9fa; }
 
@@ -476,9 +519,10 @@ nav ul ul {
 	display: none;
 	position: absolute;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 30px;
+	top: 28px;
     background: #fff;
-    padding: 10px;
+		padding: 10px;
+		z-index: 9999;
 }
 
 /* Display Dropdowns on Hover */
@@ -623,6 +667,7 @@ li > a:only-child:after { content: ''; }
 	}
 	ul.inner-ul{
 		padding: 0!important;
+
 	}
 	/* Hide Dropdowns by Default */
 	nav ul ul {
@@ -711,6 +756,11 @@ li > a:only-child:after { content: ''; }
 .carousel-caption h5
 {
 	line-height: 2em;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+	width:5% !important;
 }
 /*-- //slider --*/
 
@@ -979,6 +1029,68 @@ background-position: center;
 	opacity: 0.2;
 }
 /*-- Testimonials --*/
+
+
+/*=================================================================================
+===================== Become a partner page css ===================================
+==================================================================================*/
+/*-- Become a partner --*/
+.partner-banner
+{
+background-image: url("../images/partner-banner.jpg");
+/* background-attachment: fixed; */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.partner-banner h3.heading
+{
+	color: #fff;
+}
+
+.stat-box
+{
+	border-right: 1px dashed #fff;
+}
+/*-- Become a partner --*/
+
+
+/*=================================================================================
+===================== One For One page css ===================================
+==================================================================================*/
+/* -- One for One --*/
+.one-for-one
+{
+	background-image: url("../images/1FOR1-banner.jpg");
+/* background-attachment: fixed; */
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+}
+.one-for-one h3.heading
+{
+	color: white;
+}
+.one-for-one-container
+{
+	background: #f25e5e;
+	color: #fff;
+}
+.one-for-one-container::after
+{
+	content: "";
+    position: relative;
+    top: 2.6em;
+    bottom: 0;
+    left: 12%;
+    border: 21px solid transparent;
+    border-top-color: #f25e5e;
+}
+.one-for-one-container h5
+{
+	margin-bottom: -1em;
+}
+/* -- //One for One --*/
 
 /*-- footer --*/
 footer {
@@ -1434,11 +1546,13 @@ a.btn-w3layouts_pvt {
 /*-- //projects --*/
 
 /*-- Testimonials --*/
-.testi {
-    background: url(../images/bg.jpg) no-repeat center;
+.testimonial {
+    /* background: url(../images/bg.jpg) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
+		background-attachment: fixed; */
+		background: #f8f9fa;
 }
+
 .testimonials blockquote {
     background: #fff none repeat scroll 0 0;
     border: medium none;
