@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+
+
 html,
 body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -16,7 +20,7 @@ body a {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body img {
@@ -46,7 +50,8 @@ h4,
 h5,
 h6 {
     margin: 0;
-    letter-spacing: 1px;
+		letter-spacing: 1px;
+		font-family: 'Roboto Slab', serif;
 }
 li {
     list-style-type: none;
@@ -55,12 +60,17 @@ p {
     margin: 0;
     font-size: 1em;
     line-height: 1.9em;
-    letter-spacing: 1px;
+		letter-spacing: 1px;
+		font-family: 'Roboto', sans-serif;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+.fz-10
+{
+	font-size: 10px !important;
 }
 .fz-36
 {
@@ -101,6 +111,12 @@ a.col-pink:hover
 {
 	color: #000;
 }
+
+.fw-bold
+{
+	font-weight: bold;
+}
+
 .border-top
 {
 	border-top: 2px solid #342d57 !important;
@@ -302,6 +318,108 @@ a.col-pink:hover
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
+/* Mobile side navigation */
+#pm_menu {
+	position: fixed; height: 100%; width: 300px; background:red; top: 0; z-index: 1001;
+	-webkit-animation: backSlideOut .3s both ease;
+	-moz-animation: backSlideOut .3s both ease;
+	animation: backSlideOut .3s both ease;
+}
+#pm_menu.pm_open{
+	left: 0px;
+	-webkit-animation: backSlideIn .5s both ease;
+	-moz-animation: backSlideIn .5s both ease;
+	animation: backSlideIn .5s both ease;
+}
+.pm_overlay{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	z-index: 1000;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	-webkit-animation: fadeOut .5s both ease;
+	-moz-animation: fadeOut .5s both ease;
+	animation: fadeOut .5s both ease;
+}
+.pm_overlay.pm_show{
+	display: block;
+	-webkit-animation: fadeIn .3s both ease;
+	-moz-animation: fadeIn .3s both ease;
+	animation: fadeIn .3s both ease;
+}
+.pm_overlay.pm_hide{
+	display: none;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+	0% {opacity: 1}
+}
+@-moz-keyframes empty {
+	0% {opacity: 1}
+}
+@keyframes empty {
+	0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:1; }
+}
+@keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+	0% { opacity:1; }
+	100% { opacity:0; display: none; }
+}
+@-moz-keyframes fadeOut {
+	0% { opacity:1; }
+	100% { opacity:0; display: none; }
+}
+@keyframes fadeOut {
+	0% { opacity:1; }
+	100% { opacity:0; display: none; }
+}
+@-webkit-keyframes backSlideOut {
+	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	50% { opacity: 1; }
+	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes backSlideOut {
+	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	50% { opacity: 1; }
+	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+}
+@keyframes backSlideOut {
+	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	50% { opacity: 1; }
+	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+}
+@-webkit-keyframes backSlideIn {
+	0% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 1; -webkit-transform: translateX(0px); }
+}
+@-moz-keyframes backSlideIn {
+	0% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 1; -webkit-transform: translateX(0px); }
+}
+@keyframes backSlideIn {
+	0% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 1; -webkit-transform: translateX(0px); }
+}
+
+/*--// Mobile side navigation --*/
+
 /* top header */
 
 .top-header
@@ -790,32 +908,32 @@ li > a:only-child:after { content: ''; }
 	background-color:transparent !important;
 	border-color: transparent !important;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link.active > span.row > span.col-sm-10 > h6
+.why-sustainability-tabs > .nav-tabs .nav-link.active > span.row > span.col-sm-11 > p
 {
 	display: block;
 	color: #f25e5e;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link  span.row > span.col-sm-10 > h6
+.why-sustainability-tabs > .nav-tabs .nav-link  span.row > span.col-sm-11 > p
 {
 	display: block;
 	color: #000;
 	font-weight: 600;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link:hover  span.row > span.col-sm-10 > h6
+.why-sustainability-tabs > .nav-tabs .nav-link:hover  span.row > span.col-sm-11 > p
 {
 	display: block;
 	color: #f25e5e;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link.active > span.row > span.col-sm-2 > .arrow
+.why-sustainability-tabs > .nav-tabs .nav-link.active > span.row > span.col-sm-1 > .arrow
 {
 	display: block;
 	color: #f25e5e;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link  span.row > span.col-sm-2 > .arrow
+.why-sustainability-tabs > .nav-tabs .nav-link  span.row > span.col-sm-1 > .arrow
 {
 	display: none;
 }
-.why-sustainability-tabs > .nav-tabs .nav-link:hover  span.row > span.col-sm-2 > .arrow
+.why-sustainability-tabs > .nav-tabs .nav-link:hover  span.row > span.col-sm-1 > .arrow
 {
 	display: block;
 	color: #f25e5e;
@@ -842,7 +960,8 @@ li > a:only-child:after { content: ''; }
 	width: 100px;
 	background:#fff;
 	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 10px;
 }
 .nav.nav-tabs {
 	float: left;
@@ -986,7 +1105,7 @@ nav.pricing > div a.nav-item.nav-link.active:before
 .bestseller
 {
 	border: 2px solid #f25e5e;
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 999;
 }
 /*-- Pricing --*/
@@ -1091,7 +1210,164 @@ background-position: center;
 	margin-bottom: -1em;
 }
 /* -- //One for One --*/
+/*=================================================================================
+===================== Pricing page css ===================================
+==================================================================================*/
+/*-- Pricing page --*/
 
+label.pricing-radio-lable {
+  margin: 2em;
+  display: inline-block;
+	position: relative;
+	padding-top: 2px;
+  padding-left: 40px;
+	cursor: pointer;
+	font-size: 1.3em;
+}
+
+input.pricing-radio {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+
+.outside {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f25e5e;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+}
+
+.inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #f25e5e;
+  left: 3px;
+  top: 3px;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+.no-transforms .inside {
+  left: auto;
+  top: auto;
+  width: 0;
+  height: 0;
+}
+
+input {
+  /*  &:focus, &:active {
+        + .outside {
+          border-color: $almost-black;
+        }
+      }*/
+}
+input:checked + .outside .inside {
+  -webkit-animation: radio-select 0.1s linear;
+          animation: radio-select 0.1s linear;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.no-transforms input:checked + .outside .inside {
+  width: 10px;
+  height: 10px;
+}
+
+/*-- //Pricing page --*/
+
+/*=================================================================================
+===================== Why Sustainability page css ===================================
+==================================================================================*/
+/*-- Why sustainability --*/
+.why-sustainability-content img
+{
+	height: 250px;
+	width: 250px;
+}
+/*-- //Why sustainability --*/
+
+
+/*=================================================================================
+===================== News page page css ===================================
+==================================================================================*/
+/*-- News page css --*/
+
+.news-larg-card
+{
+	height: calc(100vh - 45vh);
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.share-links a img
+{
+	width:40px;
+	padding:8px 5px;
+}
+.news-card-img
+{
+		max-height: 25vh;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.news-card-para
+{
+		max-width: 320px;
+    min-width: 315px;
+    width: 100%;
+    min-height: 60px;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+}
+
+.news-pagination > ul.pagination > li.page-item.active >a.page-link
+{
+	background-color: #342d57;
+	color: #fff;
+	border-color:#342d57
+}
+
+.news-pagination > ul.pagination > li.page-item >a.page-link:hover
+{
+	background-color: #342d57;
+	color: #fff;
+	border-color:#342d57
+}
+.news-pagination > ul.pagination > li.page-item >a.page-link:focus
+{
+		z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(52,45,87,.25);
+}
+
+.news-pagination > ul.pagination > li.page-item > a.page-link
+{
+	color: #342d57;
+}
+
+/*-- //News page css --*/
+
+/*=================================================================================
+===================== Footer css ===================================
+==================================================================================*/
 /*-- footer --*/
 footer {
 	background: #342e59;
@@ -1398,8 +1674,9 @@ h2.heading,h3.heading {
 }
 .f1{
     box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
-	background: #fff;
-	border-radius: 10px;
+		background: #fff;
+		border-radius: 10px;
+
 }
 /*-- why choose us --*/
 
