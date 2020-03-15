@@ -7,10 +7,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Reach sustainability smart and faster with SustainOnline. Increase innovation, engagement, and financial savings for only 1 Euro / Employee / Month!" />
     <!-- css files -->
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
     <!-- bootstrap css -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/mobile-css.css" rel='stylesheet' type='text/css' />
+    <link href="css/tablet-css.css" rel='stylesheet' type='text/css' />
     <!-- custom css -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.css">
@@ -21,17 +23,79 @@
 
   </head>
   <body>
-    <header class="side-nav">
-      <h1 id="open"><i class="fas fa-bars"></i></h1>
+    <header class="side-nav sticky-top d-lg-none">
+    <div class="container-fluid">
+      <div class="row py-2">
+        <div class="col-5 col-md-3">
+        <a href="index.php"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="col-7 col-md-9">
+        <h5 id="open" class="text-right"><i class="fas fa-bars"></i></h5>
+        </div>
+      </div>
+    </div>
+
       <div id="pm_menu" class="pm_close">
-        Your Navigation
-          <br>
-          <br>
-        Goes Here
+
+        <div class="row">
+          <div class="col-12 mob-nav-list mt-3">
+            <ul>
+              <li><a href="javascript:void(0)">SOLUTIONS</a></li>
+              <li><a href="javascript:void(0)">WHY SUSTAINONLINE</a></li>
+              <li><a href="javascript:void(0)">FREE TRIAL</a></li>
+              <li><a href="javascript:void(0)">JOIN</a></li>
+              <li><a href="javascript:void(0)">1FOR1</a></li>
+              <li>
+                <a href="#partner-collapse" data-toggle="collapse">PARTNER <span class="fa fa-angle-down mr-0"></span></a>
+                  <div class="partner-dd collapse" id="partner-collapse">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">Find a Partner</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Become a Partner</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Partner Login</a>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li><a href="javascript:void(0)">SCHOOLS & UNIVERSITIES</a></li>
+              <li class="mb-5">
+                <a href="#news-collapse" data-toggle="collapse">NEWS <span class="fa fa-angle-down mr-0"></span></a>
+                  <div class="news-dd collapse" id="news-collapse">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">News</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Business Center</a>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mob-login-lang">
+          <div class="col-6 pr-0 login-btn">
+          <a class="user mt-1 mlr-auto text-center" href="https://mvp.sustainonline.com/users/sign_in">LOGIN</a>
+          </div>
+          <div class="col-6 pl-0">
+            <div class="lang-dd">
+            <select class="lang-sel ml-2">
+              <option value="">&nbsp;ENGLISH&nbsp;</option>
+              <option value="1">&nbsp;JAPANESE&nbsp;</option>
+            </select>
+            <i class="fa fa-angle-down mr-0"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- //header -->
-    <header class="sticky-top d-sm-none d-md-block">
+    <header class="sticky-top d-none d-lg-block">
       <!-- //top header -->
       <div class="top-header py-1">
         <div class="container">
@@ -41,15 +105,12 @@
             </div>
             <!-- nav -->
             <nav class="d-lg-flex col-sm-9">
-              <label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
-              <input type="checkbox" id="drop" />
               <ul class="menu mt-2 ml-auto">
-
                 <li><a class="col-white" href="javascript:void(0)">SCHOOLS & UNIVERSITIES</a></li>
                 <li>
                   <h6 class="col-white mt-2px">|</h6>
                 </li>
-                <li><a class="col-white" href="1-for-1.html">1FOR1</a></li>
+                <li><a class="col-white" href="1-for-1.php">1FOR1</a></li>
                 <li>
                   <h6 class="col-white mt-2px">|</h6>
                 </li>
@@ -59,7 +120,7 @@
                   <a href="javascript:void(0)" class="col-white" data-toggle="dropdown">PARTNER <span class="fa fa-angle-down" aria-hidden="true"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="javascript:void(0)">Find a Partner</a></li>
-                    <li><a href="become-a-partner.html">Become a Partner</a></li>
+                    <li><a href="become-a-partner.php">Become a Partner</a></li>
                     <li><a href="javascript:void(0)">Partners Login</a></li>
 									</ul>
 								</div>
@@ -84,11 +145,11 @@
       <!-- //top header -->
       <div class="container py-2">
         <div class="row">
-          <div class="col-sm-3" id="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
+          <div class="col-sm-3 col-md-2" id="logo">
+            <a href="index.php"><img src="images/logo.png" alt=""></a>
           </div>
           <!-- nav -->
-          <nav class="col-sm-9 d-lg-flex">
+          <nav class="col-sm-9 col-md-10 d-lg-flex">
             <label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
             <input type="checkbox" id="drop" />
             <ul class="menu mt-2 ml-auto">
@@ -117,7 +178,7 @@
                 <!-- First Tier Drop Down -->
                 <a href="javascript:void(0)" data-toggle="dropdown">NEWS <span class="fa fa-angle-down"  aria-hidden="true"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="news.html">News</a></li>
+                  <li><a href="news.php">News</a></li>
                   <li><a href="javascript:void(0)">Business center</a></li>
 								</ul>
 								</div>
@@ -133,7 +194,6 @@
       </div>
     </header>
     <!-- //header -->
-
 
     <!-- Banner -->
     <section class="partner-banner py-5" id="services">
@@ -154,10 +214,10 @@
     <!-- Become a partner contnet -->
     <div class="container pt-5">
       <div class="row">
-        <div class="col-sm-7">
+        <div class=" col-md-12 col-lg-7">
           <img src="images/partner-img.png" class="img-fluid pt-5" alt="Become a Partner">
         </div>
-        <div class="col-sm-5 py-3">
+        <div class="col-md-12 col-lg-5 py-3">
           <h3 class="mt-5">Become a partner</h3>
           <p class="text-justify">SustainOnline is transforming sustainability learning and reporting as we know it. We work with the best in the business to consistently deliver exceptional experience for your customers. We offer solid revenue generating programs with strong support for the partners who make our cut.</p>
           <p class="text-justify">Apply to become a partner and receive 30% back of every license you sell. </p>
@@ -252,7 +312,7 @@
     </section>
     <!-- //Testimonials -->
 
-  <!-- footer -->
+     <!-- footer -->
   <footer class="footer-emp-w3ls py-5">
     <div class="container pt-lg-3">
       <div class="row footer-top">
@@ -298,7 +358,7 @@
               </ul>
             </div>
             <div class="col-lg-6 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-              <h3 class="footer-title invisible text-uppercase mb-4">Quick Links</h3>
+              <h3 class="footer-title invisible text-uppercase mb-4 d-none">Quick Links</h3>
               <ul class="links list-unstyled">
                 <li>
                   <a class="" href="#home">Payment account login</a>
@@ -316,23 +376,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4 d-none">
-          <h3 class="footer-title text-uppercase mb-4">Contact Us</h3>
-          <div class="contact-info">
-            <div class="footer-style-w3ls">
-              <h4 class="mb-2"> <span class="fa mr-1 fa-map-marker"></span> Location</h4>
-              <p>Marketing Agency, 5th cross, 4th building, New York City.</p>
-            </div>
-            <div class="footer-style-w3ls my-3">
-              <h4 class="mb-2"><span class="fa mr-1 fa-phone"></span> Phone</h4>
-              <p>+121 098 8907 9987</p>
-            </div>
-            <div class="footer-style-w3ls">
-              <h4 class="mb-2"><span class="fa mr-1 fa-envelope-open"></span> Email</h4>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-          </div>
-          </div> -->
       </div>
     </div>
   </footer>
@@ -345,36 +388,235 @@
   </div>
   <!-- //copyright -->
   <!-- move top -->
-  <div class="move-top text-right">
+  <!-- <div class="move-top text-right">
     <a href="#home" class="move-top">
     <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
     </a>
-  </div>
+  </div> -->
   <!-- move top -->
-  <!-- popup -->
-  <div id="popup1" class="popup-effect">
-    <div class="popup">
-      <img src="images/banner.png" alt="Popup Image" class="img-fluid" />
-      <p class="mt-4 ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo quasi architecto beatae vitae dicta
-        sunt explicabo.
-      </p>
-      <a class="close" href="#">&times;</a>
-    </div>
-  </div>
-  <!-- //popup -->
-  <!-- popup -->
-  <div id="popup2" class="popup-effect">
-    <div class="popup">
-      <p class="mt-4 ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo quasi architecto beatae vitae dicta
-        sunt explicabo.
-      </p>
-      <a class="close" href="#">&times;</a>
-    </div>
-  </div>
-  <!-- //popup -->
   <!-- // Scripts -->
+  <!-- Homepage Modals for why sustainability -->
+            <div class="modal" id="empowring-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/empowering-your-employees-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                        Companies increasingly believe that addressing environmental sustainability is a strategic and integral business imperative. Employees are calling for action. The
+                        expectation that companies commit to environmental sustainability is growing, and that’s not going to change. Millennials are particularly vocal about this matter, and by 2025, they will be 75% of the workforce.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal" id="innovation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/key-driver-of-innovations-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      Regulations make us more creative. This can be expanded to further down the value chain in terms of how services are delivered, or processes are executed. Creative
+                      thinking beyond initial requirements generates more ideas and more opportunities to
+                      find points of improvement. And, once companies have begun the process of looking
+                      for improvements, they start seeing opportunities for improvement everywhere which
+                      could lead to the discovery of new markets or new value application.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="supplyChain-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/supply-chain-engagement-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      The supply chain is where the ROI on sustainability gets real (vendors consume as much as 80% of the resources used by a supply chain)-- in the triple digits according
+                    to research. It's also what separates “real” sustainability from “green washing.”
+                    That's why many businesses and NGOs are looking at how to make the value chain
+                    (supply chain, distributors, partner organizations, etc.) more sustainable.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="risks-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/mitigating-risks-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      Sustainability today is not about greenwashing for most corporations; instead, it’s about managing risk. The underlying catalyst fuelling many sustainability
+                    initiatives is the need to mitigate reputational and operational risks.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="lowCost-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/lower-costs-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      The fewer resources you use, the more money you can save. Most of your savings will come from finding ways to reduce your water usage, your energy usage
+                    (includes electricity, gas and fuel), which means cutting carbon dioxide and
+                    greenhouse emissions, and your waste which means recycling and using less
+                    materials.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="profitGen-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/Increased-profit-generation-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      Corporations that are actively managing and planning for climate change secure an 18% higher return on investment (ROI) than companies that aren’t – and 67%
+                    higher than companies who refuse to disclose their emissions.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="improvedBrand-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/improved-brand-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      A leading brand translates to customers what is relevant in today’s world, influencing buying behaviour. In other words, a brand creates value in two ways: generating demand and reducing risk and securing future earnings for the business. Brands enter the debate right about here. I believe we all understand what improving the brand means for profit, attracting talents, revenue generation etc etc.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal" id="attractingEngaging-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-flex flex-column">
+                    <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="icon-box">
+                        <img src="images/attracting-engaging-red.png" class="img-fluid mlr-auto" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <p class="pr-1 pl-1 pb-1 text-justify">
+                      Corporations that are actively managing and planning for climate change secure an 18% higher return on investment (ROI) than companies that aren’t – and 67%
+                    higher than companies who refuse to disclose their emissions.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  <!-- Homepage Modals for why sustainability -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -394,7 +636,7 @@
             nav: true
           },
           600: {
-            items: 3,
+            items: 1,
             nav: false
           },
           1000: {
@@ -405,12 +647,83 @@
           }
         }
       })
+      $("#number-of-employee").change(function () {
+            $("#result").val($(this).val() * 12);
+      });
+      $("#number-of-employee-1").change(function () {
+            $("#result-1").val($(this).val() * 10);
+      })
+      $("#number-of-employee-2").change(function () {
+            $("#result-2").val($(this).val() * 8);
+      })
+      $(function() {
+        $("input[name='individual']").click(function() {
+          if ($("#individualYes").is(":checked")) {
+            $("#reporting-pricing-section, #education-reporting-pricing-section").hide();
+          } else {
+            $("#reporting-pricing-section, #education-reporting-pricing-section").show();
+          }
+        });
+      });
+      //$('#myModal').modal('show',5000)
     })
+  </script>
+
   </script>
   <script type="text/javascript">
     (function($){
         $('#pm_menu').pushmenu({ button : "#open" });
     })(jQuery);
   </script>
+
+
+<!-- Button to Open the Modal -->
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body newsletter">
+        <div class="row">
+          <div class="col-sm-12">
+          <div class="subscribe-panel">
+          <h1>Newsletter!!!</h1>
+          <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+
+                          <form action="" method="post">
+
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control input-lg" name="email" id="email"  placeholder="Enter your Email"/>
+                          </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                              <br/><br/><br/>
+                              <button class="btn btn-warning btn-lg">Subscribe Now!</button>
+                        </form>
+
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div> -->
+
+    </div>
+  </div>
+</div>
 </body>
 </html>
