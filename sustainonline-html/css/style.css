@@ -68,6 +68,10 @@ ul {
     margin: 0;
     padding: 0;
 }
+.flex-1
+{
+	flex: 1 auto !important;
+}
 .fz-10
 {
 	font-size: 10px !important;
@@ -321,13 +325,24 @@ a.col-pink:hover
 
 /* Mobile side navigation */
 #pm_menu {
-	position: fixed; height: 100%; width: 300px; background:red; top: 0; z-index: 1001;
+	position: fixed;
+	height: 100%;
+	width: 270px;
+	background:#fff;
+	top: 5.6vh;
+	right: 0;
+	left: 100%;
+	overflow-y: scroll;
+	z-index: -1;
 	-webkit-animation: backSlideOut .3s both ease;
 	-moz-animation: backSlideOut .3s both ease;
 	animation: backSlideOut .3s both ease;
 }
 #pm_menu.pm_open{
-	left: 0px;
+	right: 0px;
+	left: 100%;
+	z-index: 1;
+	top: 5.6vh;
 	-webkit-animation: backSlideIn .5s both ease;
 	-moz-animation: backSlideIn .5s both ease;
 	animation: backSlideIn .5s both ease;
@@ -340,7 +355,7 @@ a.col-pink:hover
 	position: fixed;
 	z-index: 1000;
 	background: rgba(0,0,0,0.5);
-	left: 0;
+	right: 0;
 	top: 0;
 	-webkit-animation: fadeOut .5s both ease;
 	-moz-animation: fadeOut .5s both ease;
@@ -390,32 +405,34 @@ a.col-pink:hover
 	0% { opacity:1; }
 	100% { opacity:0; display: none; }
 }
+
 @-webkit-keyframes backSlideOut {
-	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 1; -webkit-transform: translateX(-100%); }
 	50% { opacity: 1; }
-	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 0; -webkit-transform: translateX(0px); }
 }
 @-moz-keyframes backSlideOut {
-	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 1; -webkit-transform: translateX(-100%); }
 	50% { opacity: 1; }
-	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 0; -webkit-transform: translateX(0px); }
 }
 @keyframes backSlideOut {
-	0% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 1; -webkit-transform: translateX(-100%); }
 	50% { opacity: 1; }
-	100% { opacity: 0; -webkit-transform: translateX(-100%); }
+	100% { opacity: 0; -webkit-transform: translateX(0px); }
 }
+
 @-webkit-keyframes backSlideIn {
-	0% { opacity: 0; -webkit-transform: translateX(-100%); }
-	100% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 0; -webkit-transform: translateX(0px); }
+	100% { opacity: 1; -webkit-transform: translateX(-100%); }
 }
 @-moz-keyframes backSlideIn {
-	0% { opacity: 0; -webkit-transform: translateX(-100%); }
-	100% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 0; -webkit-transform: translateX(0px); }
+	100% { opacity: 1; -webkit-transform: translateX(-100%); }
 }
 @keyframes backSlideIn {
-	0% { opacity: 0; -webkit-transform: translateX(-100%); }
-	100% { opacity: 1; -webkit-transform: translateX(0px); }
+	0% { opacity: 0; -webkit-transform: translateX(0px); }
+	100% { opacity: 1; -webkit-transform: translateX(-100%); }
 }
 
 /*--// Mobile side navigation --*/
@@ -847,6 +864,10 @@ li > a:only-child:after { content: ''; }
 
 
 /*-- //slider --*/
+.carousel-control-next, .carousel-control-prev
+{
+	z-index: 9999;
+}
 .carousel
 {
 	height: 85vh;
@@ -1329,7 +1350,7 @@ input:checked + .outside .inside {
 .news-card-para
 {
 		max-width: 320px;
-    min-width: 315px;
+    min-width: 290px;
     width: 100%;
     min-height: 60px;
     max-height: 80px;
@@ -1364,6 +1385,26 @@ input:checked + .outside .inside {
 }
 
 /*-- //News page css --*/
+
+
+/*-- Newsletter --*/
+.intro-header {
+	color: #f8f8f8;
+	text-align: center;
+}
+
+.newsletter .row{
+background-color:#00bfff;
+width:100%;
+/* position:absolute; */
+height:220px;
+}
+.custom-tab-content{
+color:#fff;
+
+}
+
+/*--// Newsletter --*/
 
 /*=================================================================================
 ===================== Footer css ===================================
@@ -2427,3 +2468,15 @@ a.move-top span{
 
 
 /*-- //Responsive design --*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

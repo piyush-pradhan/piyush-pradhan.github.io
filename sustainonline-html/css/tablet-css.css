@@ -1,0 +1,61 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .tablet-mt-0
+  {
+    margin-top: 0;
+  }
+
+nav a {
+    color: #282828;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0px 9px;
+}
+#pm_menu.pm_open {
+  right: 0px;
+  left: 100%;
+  z-index: 1;
+  top: 3.6vh;
+  -webkit-animation: backSlideIn .5s both ease;
+  -moz-animation: backSlideIn .5s both ease;
+  animation: backSlideIn .5s both ease;
+}
+.carousel
+{
+	height: 50vh;
+}
+.carousel-inner img {
+	width: 100%;
+	height: 85vh;
+}
+.carousel-inner
+{
+	height: 100%;
+}
+.carousel-caption
+{
+  padding: 4em;
+}
+.f1 h3 {
+  font-size: 17px;
+}
+.our-stats {
+  background-image: url(../images/our-stats.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.stat-box
+{
+  border: none;
+}
+.owl-carousel .owl-stage-outer {
+  height: auto !important;
+}
+
+.one-for-one-container h5 {
+  margin-bottom: 2em;
+}
+}
