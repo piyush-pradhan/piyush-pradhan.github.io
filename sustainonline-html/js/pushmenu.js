@@ -60,13 +60,13 @@
 	}
 
 	$.fn.pushmenu = function(options){
-		
+
 		return this.each(function(){
-			
+
 			new pushMenu(this, options);
-			
+
 		});
-		
+
 	};
-	
+
 })(jQuery, window, document);
